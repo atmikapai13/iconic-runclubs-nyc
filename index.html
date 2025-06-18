@@ -237,7 +237,7 @@
         window.initMap = function() {
             if (typeof originalInitMap === 'function') originalInitMap();
             // If you use google.maps.event.addListenerOnce(map, 'idle', ...), move hideLoadingOverlay there
-            setTimeout(hideLoadingOverlay, 8000); // fallback: hide after 1s
+            setTimeout(hideLoadingOverlay, 5000); // fallback: hide after 1s
         }
 
         function initMap() {
