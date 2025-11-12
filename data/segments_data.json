@@ -1,0 +1,1081 @@
+{
+  "updated_at": "2025-11-12T00:47:22.610Z",
+  "segment_count": 43,
+  "segments": [
+    {
+      "id": 693553,
+      "resource_state": 2,
+      "name": "Central Park - North Hill",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 2.6,
+      "start_latlng": [
+        40.798214469105005,
+        -73.95427105017006
+      ],
+      "end_latlng": [
+        40.79642568714917,
+        -73.95669685676694
+      ],
+      "elev_difference": 25.6,
+      "distance": 778.3,
+      "points": "yk_xFfekbM[PUd@{@`A{@rA_@vAYfCGvAYnAEv@@j@Rf@Vb@PR^X\\Ld@?b@OZ_@Na@Jk@Bq@La@Zg@`@Y^MfAE`@If@Ud@M^Gh@?",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/YGAYKAKINEYMEWTJTGS3EGWAVUZOWD4ZSSHJWOIGVTGAECETRBUKD3JFWTITH4PX6ZZWZVGR2YZTZBYKO7E4UFHA",
+      "local_legend_enabled": true,
+      "effort_count": 1558547,
+      "athlete_count": 232014,
+      "star_count": 329
+    },
+    {
+      "id": 8472872,
+      "resource_state": 2,
+      "name": "400m - Engineer's Gate - South",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.9,
+      "start_latlng": [
+        40.784111,
+        -73.959049
+      ],
+      "end_latlng": [
+        40.78151,
+        -73.961503
+      ],
+      "elev_difference": 4.5,
+      "distance": 373.7,
+      "points": "us|wF`clbMlAz@p@^t@f@jAl@zBxAhAn@NL^n@L^Bt@?Z",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/CM4BGAFFY43M3C6HTNFGTBM3UFQRAL2ITTB75FJZVXFUX7IELQLJMA5QY7EERG43Q72CD632GNEWKB5LEXYKG7A=",
+      "local_legend_enabled": true,
+      "effort_count": 1117832,
+      "athlete_count": 222292,
+      "star_count": 57
+    },
+    {
+      "id": 852387,
+      "resource_state": 2,
+      "name": "Mount Oral Boardwalk",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.7243026,
+        -74.0118098
+      ],
+      "end_latlng": [
+        40.7225276,
+        -74.0120995
+      ],
+      "elev_difference": 0,
+      "distance": 201.4,
+      "points": "{}pwFxlvbM\\BvAA\\Dd@T`@Jz@D`@Ab@FDB",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/FLKADXXNHVW4G3JSATMTO6SX7ZKC3QVZ7G2WIC2JZ7GD3C5WQQHLHEYCLQMLKJMEGQIV3OZIBC5CXNL6LQJFHEY=",
+      "local_legend_enabled": true,
+      "effort_count": 1588605,
+      "athlete_count": 166085,
+      "star_count": 75
+    },
+    {
+      "id": 2633662,
+      "resource_state": 2,
+      "name": "Reservoir Mile",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.7845558,
+        -73.9591713
+      ],
+      "end_latlng": [
+        40.7851078,
+        -73.9666777
+      ],
+      "elev_difference": 2.2,
+      "distance": 1589.2,
+      "points": "mv|wFzclbM{BaBsE{Ce@YWIWCsBBoAG}@OgA_@OC_@B]PY\\WbACf@Fp@Z~@Lj@H`C?r@Iz@Mp@Sl@G`@Ad@Bn@Lj@Vh@v@fATj@Hd@@r@CdBFbB@t@QrDDf@\\rAr@dA\\Xd@Xb@NlG`A`DVVE",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/22Y6PDYWHHGFYMKVYNE3HV4J5JIMEVICAD4G2UYV2LZ647N5CZ5AUTUP73GZVH4K2RRSF4AW6IXVGPL64DWNSPQ=",
+      "local_legend_enabled": true,
+      "effort_count": 1076963,
+      "athlete_count": 165849,
+      "star_count": 207
+    },
+    {
+      "id": 2394714,
+      "resource_state": 2,
+      "name": "Pulaski - Greenpoint to LIC",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.1,
+      "start_latlng": [
+        40.73542730882764,
+        -73.9527929853648
+      ],
+      "end_latlng": [
+        40.74279734864831,
+        -73.95170132629573
+      ],
+      "elev_difference": 8,
+      "distance": 846.4,
+      "points": "kcswF~{jbMiA@kCLQB}ANcAPs@Dc@@o@Cc@GoFyAiAOw@MuDaA{@O}Cw@}Ai@M@WFET",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/LNCHRL3SVSSGVHM57NNKVCCNYWGHWSJI37D4U667YQWKLRVUEQDDYTWJWAVGLSHXMLKI3HR6V4CW5GS56AL6H5TP",
+      "local_legend_enabled": true,
+      "effort_count": 360747,
+      "athlete_count": 143341,
+      "star_count": 81
+    },
+    {
+      "id": 8456942,
+      "resource_state": 2,
+      "name": "NYC Marathon Mile 16",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.1,
+      "start_latlng": [
+        40.752692,
+        -73.944776
+      ],
+      "end_latlng": [
+        40.759453,
+        -73.960807
+      ],
+      "elev_difference": 23.4,
+      "distance": 1598.1,
+      "points": "iovwFziibMgAtDMZKNa@`Bi@~AG\\e@rAGb@MT[`AYj@AHQb@E\\e@fAYb@CR_@nAKTKb@a@pAa@zAEXg@nAQ\\IVg@x@e@nAEZ[`ACR]pA[l@Qv@k@fBALYz@CNMNWr@U\\CNUl@]xAWd@Sl@Kh@YRQ`@ALKb@ILQx@]p@?RIJCLKFKRCz@a@f@]rBE|ACXBVMj@Qb@o@x@OV",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/ASEHGJ7BXK6YSUGXALVSOS7AM5VY5KUHMWAF3DI7OHCFKYQW3UW6I7OEOHPFSJGY7JEDUWRIK5KHCSPFEWJWFA67",
+      "local_legend_enabled": true,
+      "effort_count": 329274,
+      "athlete_count": 133201,
+      "star_count": 153
+    },
+    {
+      "id": 8456852,
+      "resource_state": 2,
+      "name": "NYC Marathon Mile 5",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.2,
+      "start_latlng": [
+        40.639056,
+        -74.020409
+      ],
+      "end_latlng": [
+        40.650112,
+        -74.008914
+      ],
+      "elev_difference": 8,
+      "distance": 1564.9,
+      "points": "ai`wFpbxbMqCuCoA_BcCwBe@i@m@{@a@a@_@Y}C}C[c@o@k@{CiDg@g@c@m@a@a@QIc@a@qCoC_BiB]UkAoA]g@aAs@YU[][Uk@q@eAuAMKy@aAi@e@]e@q@w@k@c@m@q@sAkAW[}A{BWS",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/42FSQ7EN74NMW2W3LWUP4NTFQRI5YRJAVS6SXW7JULELK3NKSUBXAJHXC7QLMRDYKLOD2KEYFEN7GDS2NJQ3VFA=",
+      "local_legend_enabled": true,
+      "effort_count": 161928,
+      "athlete_count": 129486,
+      "star_count": 58
+    },
+    {
+      "id": 25302141,
+      "resource_state": 2,
+      "name": "Bridge - Willis Ave East",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.1,
+      "start_latlng": [
+        40.803,
+        -73.929997
+      ],
+      "end_latlng": [
+        40.804071,
+        -73.927769
+      ],
+      "elev_difference": 1.8,
+      "distance": 221.2,
+      "points": "ui`xFnmfbMk@uAMu@GUGMIGK[Gi@IUaAiBc@_A",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/AZ65X4ZD5TKNHQZJFIGDVD3I2ZMAPZLFKQRFJRRCUTEKWZ6FXLYUHSDJYC4CSIYXFT57RMTWJ7Q7THLVDBZQ6XA=",
+      "local_legend_enabled": true,
+      "effort_count": 179748,
+      "athlete_count": 127238,
+      "star_count": 11
+    },
+    {
+      "id": 852256,
+      "resource_state": 2,
+      "name": "Central Park Reservoir Loop",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.78484885394573,
+        -73.96647602319717
+      ],
+      "end_latlng": [
+        40.784875424578786,
+        -73.96649295464158
+      ],
+      "elev_difference": 1.3,
+      "distance": 2530.2,
+      "points": "gx|wFnqmbMr@mAv@iB`@cBh@mC`@kAXe@b@m@t@k@b@SnA[RI\\YLYd@sAP{@@_AKkAQo@w@iAKIwW}Pe@KYCyB@m@CaB_@c@Og@GIA]JQHQRMXGPGp@Bn@d@dBPlAB~AKvAk@vBAbABl@Pv@Zn@t@~@HRLt@Bz@Ex@JfDMvB?d@HhAXjA\\p@b@d@XV`@RVH|K~Ad@CVKRMLM",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/3VGYGU5ZYRLK27GUBYIDRP2K6XPJJCEEW5GYCHQU4MLAXFKF2OUWMIRGXG7LXC3A2DVFTUWDF22ZD43LD4TJWZ2C",
+      "local_legend_enabled": true,
+      "effort_count": 584080,
+      "athlete_count": 78859,
+      "star_count": 1127
+    },
+    {
+      "id": 3020587,
+      "resource_state": 2,
+      "name": "Prospect Park Long Loop",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.670916,
+        -73.970414
+      ],
+      "end_latlng": [
+        40.671069,
+        -73.969045
+      ],
+      "elev_difference": 31.1,
+      "distance": 5468.3,
+      "points": "epfwFbjnbMFLf@L^Tv@R@FRF@LZRJNFLH^n@j@NVVf@LLNDh@HTHJ@LA@RLLHDHB^@l@GVAx@Fj@@NAf@Yv@Sb@D~@GnAXVLh@d@j@RHPPR?^DLJL\\Ff@VfA|@\\JXPH@HHf@x@JHVRd@HLFBN^n@DVz@`ANv@HV@\\LXTlAJRd@l@l@h@Vd@f@NFHBTP^\\h@VJXFRL^@r@UJI\\g@b@]l@}@Py@Ba@FU@MKc@B[DEJ@DIBMGe@@QFQv@mA|@_AFY^WFSHKFSPgA^e@XY^Kp@q@z@[RE\\?j@FRCb@?XHL?HBJNb@JZ?XIb@Cj@]l@WVWv@m@VYNRD@p@iBVg@JCv@EXB\\JZ@`@JXPJBh@FTC^Bx@QfAg@TUJGTYR_@BQZq@Bs@DQIu@Oo@Gw@c@s@K_@a@_AG[GKMAm@e@]o@K[Y[Oc@COQa@S_A[s@AOFy@WgAFA@]DQAQEKU}@FEA]CMYa@GSS]Y_AIOKAEBEIMc@IQa@s@UYq@c@_@[UAGCEIQMSWk@W]Wq@WK@}AMmAN{@Ni@TUNaA^{@`@S?IBKJi@BU?i@Mm@@MGI?OVeA`@m@`@QP[ROFSRID[FWJe@J_@^IDGOM?KN[HKL_@LI?u@l@OHUDSLQDk@?WF[@}@N]OWBo@b@k@Vs@NK?OFcB`As@Jq@h@]JGBI?_@TU\\YPIJMT_@Rq@hASTc@dBYr@ST_@ZUXc@VEE_@B]@c@CO@UAUGK@_@t@KDIAWLa@JM?_@CSKs@o@YKGQYWi@MSAiAFg@Xo@~@",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/YOJ4L4M2EWERPHPIKSCX2S7TIKJ55SCOBVQV2SW6YUTVXOCYU5SZU5WK2JFRM7LKAJFMZJMC2NULNBEQGYDXSW7L",
+      "local_legend_enabled": true,
+      "effort_count": 681113,
+      "athlete_count": 60145,
+      "star_count": 568
+    },
+    {
+      "id": 6401036,
+      "resource_state": 2,
+      "name": "Williamsburg Bridge (Manhattan to Brooklyn)",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.4,
+      "start_latlng": [
+        40.717157,
+        -73.983793
+      ],
+      "end_latlng": [
+        40.710881,
+        -73.963942
+      ],
+      "elev_difference": 14,
+      "distance": 1841.1,
+      "points": "eqowFv}pbMJ{@`@_B`@uBVgAXcBt@kC\\eBTwA\\gBB_@t@iCPSx@wDB[l@{C?KDWAOFe@Pw@Ts@Hm@Ri@@]PeB\\qA\\_A`@q@J]B_AV_BNw@`@uAJ_APi@D]Ni@Hs@B}@LmAN{@HS?}@LaAAG\\y@h@mCN]VaAZe@Z_@HMj@{AlA_FJq@Pi@RkARu@Xu@B[",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/5HK5JCXARB2FXSFWVHQVRWYRX5MY65LGKIYYWWWOQGF5H73EPHEFEHZV6HVSOCDGMF3W7ULFNP2HDLRK4DEOLNG4",
+      "local_legend_enabled": true,
+      "effort_count": 357770,
+      "athlete_count": 56810,
+      "star_count": 291
+    },
+    {
+      "id": 1424290,
+      "resource_state": 2,
+      "name": "Manhattan Bridge to Manhattan",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.3,
+      "start_latlng": [
+        40.6995904,
+        -73.9865971
+      ],
+      "end_latlng": [
+        40.7146305,
+        -73.9952819
+      ],
+      "elev_difference": 19.1,
+      "distance": 1851.3,
+      "points": "mclwFfoqbMCOOAG@CBBJAPGDM@IAWJYBSACF@D[P]`@]HUTKDa@`@[PMLYLS@WC?DW@c@b@YLIRSPEBQAYBcAp@SH_@Ba@PEB?NQJKRUNg@Da@TO@UHk@J_@Ps@b@I@KDSNMPAA?BSLEHWPaAVKHq@Ju@Zq@LMLc@NOLkAj@UXWd@YRO^STe@Hs@@SDs@AYH]PIPq@\\YLKH{Br@_@Xg@VWTYJYLe@Lo@\\[Fs@Z_@Ty@VYXc@~@QL]J[X[Ck@P?DEDSD[P@FA@_@ZMPe@PAF]JM@g@Z_Bd@WL",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/GLKP4UYCMBC3X2HTBCZ4723UIMVVPJFW5TMPLTDJVJBEJ64MYSSXDPCOFIVK7EEOBWTM25GEBOSWVXQQEYVGF4TB",
+      "local_legend_enabled": true,
+      "effort_count": 202438,
+      "athlete_count": 44510,
+      "star_count": 310
+    },
+    {
+      "id": 37717190,
+      "resource_state": 2,
+      "name": "Full Lap of Prospect Park (roadway)",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.663238,
+        -73.974926
+      ],
+      "end_latlng": [
+        40.663388,
+        -73.974807
+      ],
+      "elev_difference": 31,
+      "distance": 5377.5,
+      "points": "c`ewFffobMd@`ARx@l@zAr@tBZV`BrBRNXJZDXHX?`@CVIVQRSx@oB`@gC@e@Hg@b@gBPgAT[VSRMl@YT_@`AyBV[t@q@v@_@h@ElFRZ?n@IhA[XO^a@nA_BTSj@_@x@[XEr@AxCf@jB?ZMRQlAqALc@ZkBHS@c@A]UmA[k@[}@w@kAYk@u@cAa@y@a@uAk@sEEo@WuAKeAi@oBSe@e@cAw@eAaA}@eAo@G[@GWYgBs@SEq@McAEU?k@Fo@LqFvBWBwAO_@@s@VaAd@gEvBuBv@gElBWH[?qACg@@w@LwB~@mDvAcCfAa@Tc@l@eBtCe@dAa@vAm@v@]TYH]DmBFYHoAj@o@Fa@E]KwC}Aa@Iw@?i@RWTg@l@Mx@Gf@AdANhATt@z@x@hCxArBzBVTp@^THl@NdBVj@BrACbDYnAFx@TRJj@h@jBtB|ChBlAbAhAnAl@`A",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/WF7O4DYP634SSODG2CEGFKRRVV37N3ZAS7SWUK7DSMIEDIC7QG7CJ2BIPHPLB2VVI5U5CRZZKMEFVUKCZONDPU4S",
+      "local_legend_enabled": true,
+      "effort_count": 328290,
+      "athlete_count": 37934,
+      "star_count": 1065
+    },
+    {
+      "id": 3673193,
+      "resource_state": 2,
+      "name": "McCarren Park Lap",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.71986613,
+        -73.95166601
+      ],
+      "end_latlng": [
+        40.71986807,
+        -73.95166097
+      ],
+      "elev_difference": 0,
+      "distance": 402.8,
+      "points": "cbpwF|tjbMpAMXe@HY?UIc@MY_@OQAOB]JsBT]PILEPCf@BRNZJLLHTB~@Qb@E",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/5O7GOCH3K6NC53QCENZT2IOGZOOVWXMOA7W63CWO47WBLWRW6WITIFWXOR2UCI7TLFA4PNEQUEH466U6DGIRMPTM",
+      "local_legend_enabled": true,
+      "effort_count": 3017285,
+      "athlete_count": 36113,
+      "star_count": 220
+    },
+    {
+      "id": 37942690,
+      "resource_state": 2,
+      "name": "Central Park South to Finish",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.5,
+      "start_latlng": [
+        40.764887,
+        -73.974364
+      ],
+      "end_latlng": [
+        40.772568,
+        -73.976696
+      ],
+      "elev_difference": 11.1,
+      "distance": 1350,
+      "points": "o{xwFxbobM_Pdg@o@pAKEe@Ak@Ls@iB[gA_@u@EYSF[Ei@Mu@_@o@g@gBkBsAeBu@gAeAmB_@i@o@m@oBiAc@M",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/Z6NJANO6DUCU7SRHJJTZTTFMQV3ZWNR7XQJH3QC5BSNF2PXRJQHVZUBY5CJIHJMBOECCWTF7AD5HA474OH3FG3Y=",
+      "local_legend_enabled": true,
+      "effort_count": 37138,
+      "athlete_count": 35494,
+      "star_count": 45
+    },
+    {
+      "id": 1025332,
+      "resource_state": 2,
+      "name": "Brooklyn Bridge",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.5,
+      "start_latlng": [
+        40.7121641,
+        -74.0046496
+      ],
+      "end_latlng": [
+        40.6966188,
+        -73.9889467
+      ],
+      "elev_difference": 22.9,
+      "distance": 2279.9,
+      "points": "_rnwF``ubMp@o@bAmB|@}AdCgDVg@^k@dAmAnA_BbAgAb@s@`AqA^a@dC}D|AiBXQPWNg@lBgCd@o@lA_Bh@y@TUlBmCn@m@dB}BR_@RQZe@Z]z@uA~BsCzE_H~C_Er@eALY|BcEr@_Af@[`@Or@GnABpAJzBFjARdAFTJVDd@?",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/5EZFZ4CJ4HQRZXHSY6GRUCKKY7O6JSQSRMLES23FS2WZJI5QC3MIY3DRD2WN5TX4TVJSBLRJKOS64BQTQCFBMYBY",
+      "local_legend_enabled": true,
+      "effort_count": 100654,
+      "athlete_count": 33428,
+      "star_count": 194
+    },
+    {
+      "id": 2313336,
+      "resource_state": 2,
+      "name": "Astoria Park Track",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.1,
+      "start_latlng": [
+        40.777301914096604,
+        -73.92627884640724
+      ],
+      "end_latlng": [
+        40.7769940048836,
+        -73.92632033682794
+      ],
+      "elev_difference": 2.3,
+      "distance": 443,
+      "points": "ci{wFfvebMXJXEbAUr@_@d@c@PIPSDYKYKKMa@GCM?SEKAIB_@R[Hk@X]Xg@p@Oj@Ll@x@X\\S",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/NVBDMCTDNIQQ2BJJTMSLRP3BCDEPKV7BKUA5TALXZV6NDP4CT4CNI7RSD2H7Z4B6TOKUGFDZJSTTBAAO7YW7LX4C",
+      "local_legend_enabled": true,
+      "effort_count": 865021,
+      "athlete_count": 12131,
+      "star_count": 77
+    },
+    {
+      "id": 16651838,
+      "resource_state": 2,
+      "name": "Parade grounds Broadway side",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.3,
+      "start_latlng": [
+        40.897437,
+        -73.89625
+      ],
+      "end_latlng": [
+        40.892435,
+        -73.896458
+      ],
+      "elev_difference": 3,
+      "distance": 566.5,
+      "points": "}wrxFpz_bMNLl@Pb@D\\?tAQx@?x@I\\?fE[x@@tAS|@G`@@rAZv@\\\\H\\N",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/SBJ26ULMH544AVUDANB5O5RVHLP52LQ2TBS7UPMOELZK5SHSTMZCN6TRUBFSAAL6ICNZEI6YREGVTG2OGOBT2EQ=",
+      "local_legend_enabled": true,
+      "effort_count": 160116,
+      "athlete_count": 11616,
+      "star_count": 21
+    },
+    {
+      "id": 9109148,
+      "resource_state": 2,
+      "name": "Van Cortland Hill",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 1.4,
+      "start_latlng": [
+        40.894335,
+        -73.892021
+      ],
+      "end_latlng": [
+        40.899454,
+        -73.891637
+      ],
+      "elev_difference": 15.8,
+      "distance": 700.4,
+      "points": "qdrxFd`_bMe@Q_BsAcAq@a@OuCw@c@Ce@Gg@QgB{@g@Mg@EW@g@Ie@Q_@]g@Oe@D_@Xo@dAWf@Oj@Kr@BxA",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/MY4WJVNZ5WRZUCXGEIFFPCFZ7PYC5XS3COVICZWWQZPZB7GDSRRBWIT5NNPZMEAREXN2YWVNHHEWYQ4OOEGGDX7Y",
+      "local_legend_enabled": true,
+      "effort_count": 57223,
+      "athlete_count": 11022,
+      "star_count": 35
+    },
+    {
+      "id": 2897199,
+      "resource_state": 2,
+      "name": "Vanny Back Hills",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.3,
+      "start_latlng": [
+        40.89982443367415,
+        -73.89176655460798
+      ],
+      "end_latlng": [
+        40.90163301559243,
+        -73.8927076488647
+      ],
+      "elev_difference": 43.5,
+      "distance": 1813.3,
+      "points": "{fsxFp~~aMs@}Ae@m@U_@CY?k@Qg@]_@i@YMY][aAU]A[?k@Ou@D{AQMGg@i@SOOESOIAKLSHk@^i@VMPIRSVSf@a@P[VMDWEOIMUI[ECQCe@o@KSSq@KGMBONM^i@\\g@FKAu@a@GAQBQPIVe@`A?j@DPJRl@\\NZ@f@DP`@^PHr@NV?b@GZMH?HHVz@Bv@?v@Ml@A`@EPA\\FBRET@p@Yv@Md@?d@H\\JLBfAERITSHa@BWBG|@c@L?NB`Al@NP^l@ZN\\FL?TCTB",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/5QCUKQVZU5BB4TNSZBIXL73A7QWTK5AQUIOA6KJKQYOOSGEY5J76DV7CWLCPX4TRWMJYLS6F5LVV5R7HCADLLRV5",
+      "local_legend_enabled": true,
+      "effort_count": 41495,
+      "athlete_count": 9114,
+      "star_count": 73
+    },
+    {
+      "id": 1243199,
+      "resource_state": 2,
+      "name": "Victory Field Closed Road-Reverse",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.1,
+      "start_latlng": [
+        40.7079853,
+        -73.8391043
+      ],
+      "end_latlng": [
+        40.7004146,
+        -73.8520889
+      ],
+      "elev_difference": 15.4,
+      "distance": 1944.2,
+      "points": "{wmwFlutaM^K\\AXIVA|@@^Cl@Bl@CPC`A_@\\KfD_CTKbAQ^DPPNZN^b@lDJZNVRPt@h@fAd@VVR`@Nb@DTDpBLxA@j@NdAFbA?lBQvB?v@@j@XnCJpBIl@I\\MZ[l@M\\ORa@r@g@nAW~@Kf@YxDBr@Hp@Jf@f@~ALXTX^t@TTRJVFl@DzB\\h@@xAGXLb@z@`A`CF^Fx@",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/6VPZQRFZZX6YHCU4DQRUBNH74ZL27DZUNDLHRLZ45OJEICEMFGY3KS7EG6XSCJPSYG77Z6JPXPMRDEBO66EM2CA=",
+      "local_legend_enabled": true,
+      "effort_count": 68127,
+      "athlete_count": 4916,
+      "star_count": 60
+    },
+    {
+      "id": 11132730,
+      "resource_state": 2,
+      "name": "Southbound Old Putnam Trail ",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.2,
+      "start_latlng": [
+        40.907949,
+        -73.88478
+      ],
+      "end_latlng": [
+        40.889516,
+        -73.893104
+      ],
+      "elev_difference": 3.9,
+      "distance": 2225.2,
+      "points": "sytxF|r}aMb@LlADf@AhAPb@@b@HtBRf@Hf@LjAJfARt@PzCh@jA\\lATpBVd@HxCx@jARd@D`@Jb@Pb@Hd@NbADh@HhBb@d@NfAVrANl@@b@Nf@Jr@^hAPVHdALd@LPNZ@`@TdA^hATd@F@DhA`@d@TlCzAd@Jh@D^VfB|@^Xb@P`At@`@L`@XvBdCvAhBVb@n@lAZb@n@hB\\`@",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/FD6X55DQBKUSVTQ6XKBHZXCKJPS7SINUBS2X44EV5O4IQENDKRWJM5TVQNREY7FGYM7JD5MWHX6RKVS4VQ2ZTUMK",
+      "local_legend_enabled": true,
+      "effort_count": 27177,
+      "athlete_count": 3814,
+      "star_count": 25
+    },
+    {
+      "id": 1185818,
+      "resource_state": 2,
+      "name": "Cross Island Run",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.1,
+      "start_latlng": [
+        40.7896466,
+        -73.7808781
+      ],
+      "end_latlng": [
+        40.762797,
+        -73.7558647
+      ],
+      "elev_difference": 6.3,
+      "distance": 3782.3,
+      "points": "gv}wFniiaMJuAHWb@gAFWNiB|@qCNi@L[Va@X[tAgDjCsEVU~A{BfAmAXa@V[bCqB|BsBrCwBdEkDh@k@pBmBfAiA|@iAvC{CxBeB\\]xDwCj@_@|@c@`Bm@\\Cf@Bz@_@vAe@\\SzB}@x@[NALGVOXKzAw@n@g@h@WVWh@YtAgA|@i@`EqDv@{@xAeBz@mAZ[d@u@d@i@d@w@RQv@gAL[xCmCfCkBp@c@PW\\IdAi@j@M~@[xCiAXEz@Y|@Kl@Sn@GjA_@PMfAW`@MPKp@GpAk@XSd@g@Zm@t@eE^aAb@q@X_@",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/G3Z3OUHKMKQMP3JULQB6BKJSBQ6KI45U4I3YHRO5O34DDRPJ5H7COJAQXWAY24MTCLY27HUB3DO432JRAE75LUA=",
+      "local_legend_enabled": true,
+      "effort_count": 20696,
+      "athlete_count": 3175,
+      "star_count": 50
+    },
+    {
+      "id": 20944257,
+      "resource_state": 2,
+      "name": "Little Bay Park east",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.789159,
+        -73.793724
+      ],
+      "end_latlng": [
+        40.790938,
+        -73.781569
+      ],
+      "elev_difference": 3.2,
+      "distance": 1138.9,
+      "points": "es}wFxykaMp@IHWXe@DUJcA@_@AQEYK_@U[KWYg@CSU]Ic@MEUWQMuA{BW[Yu@Oo@KsA@{BTcG?q@G}AAs@@{@GqDU_Dk@uEa@uAYu@s@}AGOAQb@wBFOFE",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/OVBHON2IMSOKCHQYAWTRVJJ5WG3ADOKYQL5IPUQ2EVGPY7SZKPHUOQT5NX2D5BI7OZSARB5U4IY35BITAXE5UJQZ",
+      "local_legend_enabled": true,
+      "effort_count": 25361,
+      "athlete_count": 2934,
+      "star_count": 18
+    },
+    {
+      "id": 10761768,
+      "resource_state": 2,
+      "name": "Boardwalk Mile",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.2,
+      "start_latlng": [
+        40.590177,
+        -74.065005
+      ],
+      "end_latlng": [
+        40.578619,
+        -74.07687
+      ],
+      "elev_difference": 3.6,
+      "distance": 1631.8,
+      "points": "qwvvFhy`cM^d@|B`C~D`F^`@rBjBlBpBvHrHvFnG|CbDtHtI`A~@zBjBjKhJ`@`@v@bA",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/LYLCRQYAAU67HYAZRPS3F4ZSORLNQXGRN6R45YEH57653EYTPBBGENKH5DGFI6M2OB52FFNFW5YWEOCKP5RX5ZEE",
+      "local_legend_enabled": true,
+      "effort_count": 18850,
+      "athlete_count": 2927,
+      "star_count": 15
+    },
+    {
+      "id": 11493997,
+      "resource_state": 2,
+      "name": "Joseph Yancey Track 400",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.828083,
+        -73.929665
+      ],
+      "end_latlng": [
+        40.828075,
+        -73.929665
+      ],
+      "elev_difference": 0.5,
+      "distance": 402.5,
+      "points": "ofexFlkfbMLZTTP@PALIPYDY?WKa@w@sBe@yAQSIC_@?WLIPE\\?TDTzA`E",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/XUPUXPT3FTSG4MZTS7JA6WONKWGWV77VTW4IO6LLBEGX3BVZYFZJEN5PFSRH74QSNE5SOLUNQWH24PIJPBPOSAZS",
+      "local_legend_enabled": true,
+      "effort_count": 172820,
+      "athlete_count": 2612,
+      "star_count": 21
+    },
+    {
+      "id": 22771784,
+      "resource_state": 2,
+      "name": "SIAC Fun Run final sprint",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.3,
+      "start_latlng": [
+        40.619584,
+        -74.111986
+      ],
+      "end_latlng": [
+        40.61823,
+        -74.109041
+      ],
+      "elev_difference": 3,
+      "distance": 308.7,
+      "points": "ko|vF|~icMDo@BgCHm@^wAd@kAT_@bAgAzAyA",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/6T5TJ4ZMN7J6CVLB5NUATXG4XRDMRXCB74JQ6VRONTUGGTSCC4IX77YRFF5TVIKYVW3OIMVQTIOQCYNSUM5IRFVY",
+      "local_legend_enabled": true,
+      "effort_count": 57894,
+      "athlete_count": 2105,
+      "star_count": 10
+    },
+    {
+      "id": 5229402,
+      "resource_state": 2,
+      "name": "Pkwy climb",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 2.2,
+      "start_latlng": [
+        40.858084,
+        -73.846393
+      ],
+      "end_latlng": [
+        40.857639,
+        -73.856249
+      ],
+      "elev_difference": 18.5,
+      "distance": 850.6,
+      "points": "_bkxF~bvaM?z@GjAF`@?XI\\Ix@Q`AJbABz@NnBFhAAd@E^ARJlAAx@?XEVC`AFRLRH`AAZHrB?VFj@?|@RhAEvANdCApCFf@Bd@FTB\\AJ",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/57OKUMT6EK7PDSFZVIWLJICWNJAXIOTWVRMMORZADAKSL6NB3GHWSAB4AWGGSRYAG5P22WA6KK32LT3X5TIOX6Q=",
+      "local_legend_enabled": true,
+      "effort_count": 22372,
+      "athlete_count": 1927,
+      "star_count": 22
+    },
+    {
+      "id": 15289995,
+      "resource_state": 2,
+      "name": "Zurück Meile",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.544896,
+        -74.123831
+      ],
+      "end_latlng": [
+        40.556693,
+        -74.127749
+      ],
+      "elev_difference": 1.8,
+      "distance": 1634,
+      "points": "q|mvF~hlcMY}@[w@GSq@oAi@}ASYQa@QWc@e@w@a@qBe@k@AO@WC}ALU?uAD[DO?OBk@?a@BoAR{AL]JMJ_@BQHg@FYJKAODU@s@TGAQBuBv@_Aj@M@[VUFUVIPSVkA~@Sb@g@p@GBWh@CNYl@AH_@p@WVQZK\\QTKh@W^MJMb@[`@CP[h@W\\QV[ZOXe@d@IB]CIFCF]VY^GPCPGLWXa@ROGEG",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/PKAMQGCHAHWBYLKDKR3UGCWTI7IRJICONX4BJ75YFFXMN74CX5E25FNJCSP5KBYTKFZJQIZTYQBUUG3DHAF5CRA=",
+      "local_legend_enabled": true,
+      "effort_count": 11058,
+      "athlete_count": 995,
+      "star_count": 8
+    },
+    {
+      "id": 16177811,
+      "resource_state": 2,
+      "name": "East River Tempo Loop",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.725105,
+        -73.97204
+      ],
+      "end_latlng": [
+        40.725178,
+        -73.972552
+      ],
+      "elev_difference": 3.4,
+      "distance": 3800.7,
+      "points": "{bqwFhtnbMRK\\A|@JpCj@xHfAhARpAXfBVh@BpB\\h@FhGlAnCx@~Bh@d@Xl@l@VPND`@?h@GPBdCn@fDlAhAh@pA\\b@Td@NZ@XFj@NRRVl@RTVNL@l@[P?l@ThAn@b@`@|@tAp@pAn@bATp@D^H`DDxB?xBKLi@DMG[kCs@wCsAyB{A_Bg@]yAw@_A[}@g@cBs@c@KiAc@s@]g@IwEwBmAe@y@c@kAi@c@MeAi@e@MkAQmDQsCEaGa@y@KuAEsAKiASg@MmBw@_Am@SUs@e@qB}@_BgAo@[",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/PTVKXGFVTWRTMD2BPCPRQGOHXYKSRLUZUYJGRLCG42ZLVN42QJ4PLX6VNEQJLAT65VZ5E3KY4BM26L425NANP2A=",
+      "local_legend_enabled": true,
+      "effort_count": 4520,
+      "athlete_count": 948,
+      "star_count": 213
+    },
+    {
+      "id": 8555639,
+      "resource_state": 2,
+      "name": "Esplanade from BPR to 95",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.2,
+      "start_latlng": [
+        40.895268,
+        -73.806937
+      ],
+      "end_latlng": [
+        40.890152,
+        -73.801415
+      ],
+      "elev_difference": 2.7,
+      "distance": 739.8,
+      "points": "kjrxFjlnaM\\U^[\\St@k@bB}Al@c@l@m@Ze@rAqA^e@hAaAv@mAVe@`BeCt@{@t@cAR]~@aAJS|@cAT[",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/MCRCBRLVQVLOW26WJI3LM6WMDUINXS6TYCU6ZDJ2ZNT6W66A6X57BUXYRM4MLO5V5U5N2LVSZBPNFK3P7BZ2STI=",
+      "local_legend_enabled": true,
+      "effort_count": 15784,
+      "athlete_count": 902,
+      "star_count": 8
+    },
+    {
+      "id": 17965019,
+      "resource_state": 2,
+      "name": "🇺🇸 Purple Heart Memorial Bridge 🇺🇸 South 💜",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.1,
+      "start_latlng": [
+        40.570658,
+        -74.169511
+      ],
+      "end_latlng": [
+        40.56126,
+        -74.169649
+      ],
+      "elev_difference": 4.5,
+      "distance": 1051.7,
+      "points": "q}rvFnfucMXMb@AZ?^Ex@E\\BxAEvA@\\Cx@Ab@Dp@?XGN@^JNBh@?`@LH@p@AfBDh@AlCJf@C|@D~AElCHbACd@BR?XFp@K|@HXAj@Hz@GdA@",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/3KMXACLEXW6NSQBODDQWHBITEMBIQ7NXXSMDEFYZ6Y5XVPQ2QGSWGGH7E2PYM4CCZXLGNPXKFKS4H5NYWEMUQKY6",
+      "local_legend_enabled": true,
+      "effort_count": 6076,
+      "athlete_count": 812,
+      "star_count": 5
+    },
+    {
+      "id": 10327165,
+      "resource_state": 2,
+      "name": "New Springville Greenway - Richmond Hill Rd to Costco",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.1,
+      "start_latlng": [
+        40.589101,
+        -74.168616
+      ],
+      "end_latlng": [
+        40.571244,
+        -74.170184
+      ],
+      "elev_difference": 8,
+      "distance": 2200.4,
+      "points": "{pvvFz`ucMAt@BTFJJLNLb@NJ@HAHCPONk@B[J_@PYh@Oz@O^Ft@FrBh@b@FN@\\ANBt@Fl@R`@F`@L\\@ZC|@@VAdAHRDHDbAD`AT~@Dr@?n@Hp@BNHRBnAB\\C\\Dn@NhAHV?h@NPCN@v@Cf@Hb@@v@L^L\\B\\Hj@ArBH`@Aj@HzB?b@DdABt@NP?PIp@GZ?x@L`ARh@An@GPBn@?h@HV?RCn@Bl@Cf@FXATDp@Db@FZ?REXC`ACd@GZA`@Kt@Fz@MVABAw@Xe@@",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/BXGKLMMHSLG553D5MMW26DGBXTU7UDWO4V2KJ44QYMW54OPHK5K7PFLRK4MORH5XB3R5RQLEGKSF247FHQ4PXPQ=",
+      "local_legend_enabled": true,
+      "effort_count": 5333,
+      "athlete_count": 692,
+      "star_count": 6
+    },
+    {
+      "id": 1201983,
+      "resource_state": 2,
+      "name": "AB Mile",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.1,
+      "start_latlng": [
+        40.587418,
+        -73.736908
+      ],
+      "end_latlng": [
+        40.586242,
+        -73.718079
+      ],
+      "elev_difference": 1.4,
+      "distance": 1599,
+      "points": "ifvvFtv`aMFuAJyHNwCV}OZiMAk@\\eNRyFJaFVoJf@sMTsJ",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/DEHUHEUTUPOSKBZ7NANHRV7OND7VCBFYWMTFUDCID6AAJNBVMKHUBC2MHMCBJS7GACUHIIXQ5REGKCLBKCPQNVCP",
+      "local_legend_enabled": true,
+      "effort_count": 2402,
+      "athlete_count": 508,
+      "star_count": 11
+    },
+    {
+      "id": 5979166,
+      "resource_state": 2,
+      "name": "Van Cortlandt Park 2.5mi XC course",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": -0.1,
+      "start_latlng": [
+        40.891594,
+        -73.895933
+      ],
+      "end_latlng": [
+        40.894685,
+        -73.892865
+      ],
+      "elev_difference": 50.1,
+      "distance": 3974.3,
+      "points": "msqxFrx_bMiCgEmBgDiCaEkBgCmA}Ae@a@cAo@e@e@m@]q@W{@SwAQO@kAWk@Se@SYU_@M[Ka@Ac@Gc@Km@c@OG_@AQF[RKLYh@]d@Ob@Mx@?l@@l@KZCBe@JU@SKi@gA_@g@W{@Km@Ka@a@_@a@Y[a@a@Ya@Kq@KeBOg@?k@E_@Gi@e@w@e@IAa@N[BYRi@`@[j@e@l@c@Vg@D_@Q{@u@Ye@Si@GEKEO@WFQRm@^WBi@Og@EI@YPa@|@Aj@Lb@\\b@\\PDFHf@\\^`@\\\\NP?~@WD@FFJRNd@Df@GfBQhAARRHh@G~@[j@GX@dAXf@Ab@CVOFIRi@B]DOt@g@LAT@VL|@x@n@r@PH|AH`@GdBk@bBYxAkATMh@Q^AJJFPB`@DjAI`GIfA?ZHRDFTLNBR@x@EfAOz@GtB_@`Cq@`Ce@lFqBjAi@",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/JKCORLURU3K5LSVKUM5BTTFKMPQJXXBFLFCW2PGKN2FBXBNYISWWY2RGOLCQGIBULJKURQ7WUZEX4APLFYZZXZA=",
+      "local_legend_enabled": true,
+      "effort_count": 674,
+      "athlete_count": 487,
+      "star_count": 40
+    },
+    {
+      "id": 10375393,
+      "resource_state": 2,
+      "name": "CSI track",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.60432,
+        -74.151776
+      ],
+      "end_latlng": [
+        40.604328,
+        -74.151779
+      ],
+      "elev_difference": 2.3,
+      "distance": 404.6,
+      "points": "_pyvFrwqcM_@D]\\Ip@Lt@XX^HvC?d@SRc@Di@Ig@U[_@IwC?",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/QD7K4FXP3RGJNMTH72NGF5P3BJYRGHBVCX5RVKKFZ6VB2QNUVMLUJJ6EHJ42FYKTKIBCCRNAYPEZRFLV3XRRODDF",
+      "local_legend_enabled": true,
+      "effort_count": 30994,
+      "athlete_count": 477,
+      "star_count": 10
+    },
+    {
+      "id": 22587448,
+      "resource_state": 2,
+      "name": "Queens Marathon-QDR Half Marathon Loop (2020 Update)",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.74703,
+        -73.844814
+      ],
+      "end_latlng": [
+        40.746998,
+        -73.84483
+      ],
+      "elev_difference": 8.4,
+      "distance": 10662.2,
+      "points": "}kuwFbyuaMKAc@OUCi@Qo@Wi@Mk@U_@So@U}FiB[M{Bo@[MQ[Eo@So@Ti@d@}@`CuDHc@Ei@i@y@Ui@]kAS_AIm@Ek@C}ABc@\\mCRu@v@{Br@aAd@g@f@_@`@Sj@Oj@[LCd@?^LJVAtAGrAMPyARMF]Ta@f@Wf@M^Kp@CfALt@Pf@Vd@l@v@lAp@d@d@HBrAq@vAi@t@SnDw@nCSj@Bh@?d@Bh@Cd@DVRXl@H`@Ff@?f@Ih@]tAW|ALf@|Az@pA|AfAfBrAnA\\Pd@Dz@I`@Mz@c@hAa@|@c@d@Qf@[pAk@V]Vo@?UMsA?q@D{@Jw@Ei@_@c@sCgC]YeAKUGC`B@rB@v@LxALhAd@fBRl@f@jBJJPVVl@Pl@z@pB^ZPDb@Fn@?l@Bd@Hz@r@`@d@^Zn@^n@Lh@Bj@Nd@G|AA~DMxBWv@QpAa@pCeAb@MrAo@vAy@l@_@`BsAl@a@b@g@t@o@~AaBpAcBdAkA~@}@nAaA`@g@~AoA^]|@u@d@Y`@_@PWPk@PoA|@eE|@kFDm@McAQ_@[_@kAk@u@[}@Yo@[m@Oa@H}D|Ae@LoAh@m@NoAd@aA^o@^yAh@IFy@\\u@`@[X]d@g@bAYb@IFo@\\iBZ]Eo@Ue@KSC]AgCDaFVk@Ti@l@_BpAgAb@aBf@c@Pc@?qAHcAKkABuBXe@LMFI\\HNvA|@^`@bAv@X\\Db@QbBCdAB~@H^FF\\NT`@@`@Of@a@J_Aa@e@P{@`@eEfBsAd@q@HSFU@i@Sq@a@g@e@gAcB[a@gAgA_@W_Aa@[Js@xBuBnHOn@]dAS~@?d@v@lARAlAg@`@WnAi@jAu@lBaA^Op@Ql@Fb@Ab@WD?DF?~AAt@In@IZMVQPwDjBOX@d@lAdFz@dE`@|A`@\\^AdC_Ad@HTRXx@Lt@Bx@Gd@O^_@l@QP{@j@e@Hc@MWe@WiBOs@EQ_@m@C{@E]Qm@CYMa@C[Uk@YeAk@gDWiAQk@]][@a@T_Br@uAv@yB|@ODECEK]yAEMu@gAUe@Oo@Og@",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/W54PVP6H6UHFV6FW7NZUC4VQ6KWU2PGZNH3UVO7Y35OAFXTTTGDTOUIOS2CVKFPKIWKKKCAQGKVK5LDFXWSIPZLB",
+      "local_legend_enabled": true,
+      "effort_count": 1170,
+      "athlete_count": 423,
+      "star_count": 179
+    },
+    {
+      "id": 872146,
+      "resource_state": 2,
+      "name": "Bayonne Bridge round trip",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.6,
+      "start_latlng": [
+        40.65053623173446,
+        -74.13786356344274
+      ],
+      "end_latlng": [
+        40.65041150901527,
+        -74.13800203248313
+      ],
+      "elev_difference": 54,
+      "distance": 4027.3,
+      "points": "ypbwFt`ocMfAl@fCfBXPVHb@^l@`@@LNL`ClAtBhAp@Tv@\\t@VpEnAdA`@j@Pd@R`@F`A\\x@b@`@FFHTDr@f@LFr@Fv@L|@ZrA\\\\FtAf@t@^\\HZPp@L^NlARrB`@~@Vx@NdBh@x@\\h@LfBl@ZFr@X`A\\p@Zp@RdB^hBn@jDz@xCh@HA?FD@[YKEU@}AMe@Ks@Iw@W]Gs@Y{@e@{CaAaAe@u@O}@]USiAa@m@QqBa@e@OcB[WK{@Sw@FcAc@e@]y@Sg@_@_@QOCa@?}@Wi@[KEu@MgA_@_@Ga@Q_@Bo@MuB_AQMOG_@Ic@QOEs@G]S][_ASa@Q{C{@g@I]@iBeAMKYKc@Ya@Ka@Sm@a@aAa@a@Uo@c@q@k@k@USOk@Ue@Yo@c@WW",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/47IO7KMKHGFSE6HPLGPP33WZCGEC2DYFCSJSO5NEWPGY6EMLPMNJ7HHHJ2QSZWXEJCXV3AFACVMRIVGFTSMH5WBG",
+      "local_legend_enabled": true,
+      "effort_count": 1714,
+      "athlete_count": 419,
+      "star_count": 13
+    },
+    {
+      "id": 2297485,
+      "resource_state": 2,
+      "name": "Bloomingdale Park 1",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.535449138880274,
+        -74.20828923589941
+      ],
+      "end_latlng": [
+        40.535526839122674,
+        -74.20820214792546
+      ],
+      "elev_difference": 14.2,
+      "distance": 1703.9,
+      "points": "oalvFxx|cMGBGLAVBtAJ`B?b@Df@?|AHx@Lh@F|@Ff@@t@FNNFPFVBX?LIHKlABJEbACJKZg@JIPC`@DHFLLRJfAb@PALKHOv@a@DM`AB`@D\\@^In@LJCPONEr@Id@AFOYsB?UNi@AKMGo@i@]e@Wc@So@KSEc@BYHm@CS[i@C[@q@Ak@YeAEWKKMGQAIOKAm@`@aBh@m@Bk@Lg@DUL_@BiBX]@YLy@PkBp@{@DKD",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/OYKZHMHAKPX4MENTKUIBBT2MCNBK2GS3AJVFMROBQX5Z5VAPGPQSUG5Y6BZB7LY23VOWJXQDUZQGGDFVUT5LHIY=",
+      "local_legend_enabled": true,
+      "effort_count": 8522,
+      "athlete_count": 406,
+      "star_count": 9
+    },
+    {
+      "id": 16663036,
+      "resource_state": 2,
+      "name": "Brookfield Park West 🍁",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.1,
+      "start_latlng": [
+        40.563405,
+        -74.161942
+      ],
+      "end_latlng": [
+        40.563126,
+        -74.161837
+      ],
+      "elev_difference": 3.6,
+      "distance": 1557.7,
+      "points": "gpqvFdwscMGFOJ_Bb@g@XiAZ]Z[j@w@~DGd@?XBd@Rr@VdBBzAG|BD^HPLPhCzARDRCPMP[d@eBFELETBnA`@jBTnBNZIRIXWXa@r@gBh@eCFq@Hc@@g@UwBAe@CMgByEWw@kAwCMIU?kCfA_AX",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/22MX4FZCQCX4K3NTQTTWATHN5X3YKKXUOUYJBMTL3FHJSYE6EV3OFI6EVDRRESRCMA336AVKWQ5SVG2JEYE6G2I=",
+      "local_legend_enabled": true,
+      "effort_count": 3495,
+      "athlete_count": 357,
+      "star_count": 3
+    },
+    {
+      "id": 11523957,
+      "resource_state": 2,
+      "name": "Things crazy people do: 9 laps from 87th Street",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0,
+      "start_latlng": [
+        40.782524,
+        -73.960616
+      ],
+      "end_latlng": [
+        40.782471,
+        -73.960661
+      ],
+      "elev_difference": 2.9,
+      "distance": 22938.9,
+      "points": "wi|wFzllbMUMgBwAc@UoAaAWOuAk@YSSUUSaAi@w@k@q@_@mA_AaBiAYIa@EuAHa@C{AU{@Wc@Km@CYDSLUXQ`@IXCj@Fh@Nd@Rz@Dt@@~ACp@Ir@]vAM^Cb@?n@Bd@VfAV\\\\`@h@z@BJDb@?j@EvAHfB@`AKbB?n@Fr@RvAh@|@n@r@ZRx@Zb@H`@@bEp@`BRd@H`@EVKhAeBj@iANe@b@qA\\{Bh@kBh@cAf@m@^S`@Sz@S\\M\\URWd@eALc@Lm@HiA?u@Ii@Me@k@cA_@QyA}@aCeBa@Sc@YmFyDyFqD_@IcBLu@@kAEi@K]Oc@Y]Ke@Hg@TY`@KTGd@Bp@d@zAR|ABn@Aj@Gx@Kt@c@nBCl@?j@Hf@Nf@LZj@r@Vd@Ld@Fz@?zBHvA?|@MxA?n@TjBPl@b@|@Z\\z@d@hAZZF^?xEz@|@J|@Ep@u@h@y@\\o@b@iA^{Af@}CXu@Xk@l@u@\\Y`Ae@jAQTKNOL_@DW`@a@Ng@Fa@F{A?m@QsASc@W]w@k@wBsAqBwAw@c@mB}AaB_A}@q@mD{B[Ks@G{@Fi@@oAEg@IkBs@a@De@H]ZWZGd@Ah@Hl@^lAJn@Fj@@zAKxAe@nBC\\Az@Bl@Nf@Zn@\\^T^Th@BVBt@ClAJ`B?n@Cr@KxA?p@Fl@Ln@Rl@Vh@b@p@XNn@b@bBPpARjAJlAZzAPN?JXFA\\w@xAqBb@eAXcAf@kC`@_BJ_@b@{@TU`Ao@~Bo@TU\\m@^}@J_@PkA@o@Gw@Iq@Mg@W]YYmAs@eCgBoDyBmBwA}DaC[Wa@MWQy@]i@Ei@Do@@eAC_AQ{@]i@Ik@He@XY\\Kf@Ch@l@fCHj@F`BAr@Gt@g@zBCZCl@Bh@Ln@Pd@t@`AVf@J`@Fj@EhBJvB?h@Ad@KpA?p@Fp@Ln@Nl@j@bAl@h@^Pp@PzIrAh@Ff@G\\ORWbAiB~@uBNm@\\uBNo@To@r@qAp@w@~@c@fAYXMXS|@aCH]B_@@}AIk@I_@Oa@[c@{@m@cAm@cAu@cBgAcB_AwFwDkAu@a@Oc@[g@[c@Kg@Ag@DmBGoB]e@Q[C_@BYPg@r@I\\C^Fd@b@tAJd@Fn@Bl@CbAEj@Il@]xAGxAFv@b@hAr@z@\\hABl@O~BDj@@rA[dCCp@Fr@Np@h@tAZ^ZP^Lh@JjADbAJ`@NbB^bDj@b@G^SZ_@j@aAZk@`@aAXkAh@cDLi@b@gAfAiA\\Wf@SjAY`@S^a@t@{BHq@@wAMcAQg@W_@]YaBaAaAs@y@_@u@k@]ScAu@aAi@q@k@{@i@_@[_Ai@]YoBqA_@Oe@AqAHeA?kAWqAc@i@G[FYN]ZOd@Gb@@d@h@xBJt@Fr@?t@E|AYnASf@Cp@BnALb@~@vARd@Nn@Dn@ArABpAHj@?v@Ar@Gh@Ad@NhCLj@Pd@Zb@\\`@^PnARhJpA`@B`@K^YVe@t@iAf@iAf@}AJk@Fm@XmAVu@\\q@Zg@b@g@ZUz@]f@G^IVS\\m@l@mBHs@AsAWqAQe@Y[yB_B}@i@c@We@K{@i@oGoEw@c@[]eCcBe@Kg@?q@F_@Ag@De@EkAYkAc@e@?g@Te@d@Qh@Cn@Hl@XfAJl@Dd@@tBB`@Eb@Kb@]pAEd@?j@Hn@T`Ah@x@Rb@Pd@Fj@@~ANjCAl@K|A?nADp@Lz@J^Rb@V`@TV\\TbAPrDb@h@LjAP`ALbAF^M\\[^e@p@mAVm@j@{ALg@J}@`@cBLc@^y@X_@^c@v@g@h@KbAY`@]P]p@yBDk@@k@YcCS[{@u@kAm@u@e@c@_@c@UyB{AoAs@QQ[Sg@[YKa@c@i@YsBwAs@a@iAWq@AqADc@Ac@CeAQc@Wc@Mi@Dg@Z[^Kp@A`@Ld@Z~AFn@Jh@Bl@Ap@I|@In@Sn@Kl@CfARjAh@dA\\\\Rf@Jd@Dn@@hDB|AGlB?l@@l@Jl@Jj@L`@Vb@X^ZX\\FZJtB^rG|@b@BJ?b@M\\Y^e@j@eA^y@`@qA\\gB\\wAj@_BVa@n@o@b@[dA_@`@IXO\\]Vg@Pk@VkADe@?u@Iw@Ok@Q[WYc@_@aBmAeEgC]W_B_A{CuBqBmAkAw@]Sc@IoABaBG}A]i@Q_@Gc@Ba@RUXQh@Gf@@d@n@vBFn@F~AC`AI~@e@|AGfA@d@TbAP^r@bAR`@J^Fl@GpBJ|BO~DDn@H`@Rj@Rf@Vd@VX`@\\\\P~@JhATtANb@J|Df@f@M~@aAR[`AuBl@eCJq@X{An@wAXa@dA_AvAe@b@GXWXa@h@sANk@B]@m@Iy@QoAS]]]QU",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/SZIKCSQF32E7KAEIQJFECJ26QGNYVQNQO5MTZMUFMKENDJJ43KFT3M4ZBUS44JPCD3N2IYGANZDT3JQN4HL3JO7E",
+      "local_legend_enabled": true,
+      "effort_count": 285,
+      "athlete_count": 196,
+      "star_count": 32
+    },
+    {
+      "id": 21583092,
+      "resource_state": 2,
+      "name": "Annadale Rd-Sneden to Arden",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.9,
+      "start_latlng": [
+        40.540577,
+        -74.17732
+      ],
+      "end_latlng": [
+        40.544324,
+        -74.17646
+      ],
+      "elev_difference": 4.2,
+      "distance": 424.1,
+      "points": "qamvFfwvcMk@?k@MUDk@Em@Jc@Eo@Fu@Gq@BQI[Ce@Qo@Oo@WMOKEyA_@c@Y]M",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/ODM3VS5OCKHJAP36U4IVD4NM22RIKA6EOXAG43MZHA63QQUMRE54OAYV5P6DWKNL2B4ONOSI4M2LBWGUFXNWAFY=",
+      "local_legend_enabled": true,
+      "effort_count": 1559,
+      "athlete_count": 186,
+      "star_count": 0
+    },
+    {
+      "id": 27568413,
+      "resource_state": 2,
+      "name": "Strava x MOTIVNY 1%",
+      "climb_category": 0,
+      "climb_category_desc": "NC",
+      "avg_grade": 0.2,
+      "start_latlng": [
+        40.744127,
+        -74.002883
+      ],
+      "end_latlng": [
+        40.721379,
+        -73.995384
+      ],
+      "elev_difference": 8.7,
+      "distance": 2997.9,
+      "points": "wytwF`utbM`@Zf@Nh@Xh@\\ZX`@RRPh@XNPdAn@Td@j@V`@ZJLrAz@LFRFNHR@h@G~@FvA?f@DZJh@VxAC~ATZJPHTFTJFFVDb@?PCn@@p@GFCTYVUb@U|@OP@PEb@ArAWVKz@Wb@Ml@G~@[d@Ed@I^Qr@Ip@WXOp@g@~@_@h@[bAe@NKTYROr@]d@QTOj@Op@a@RGLGPQ\\Mv@i@j@Y\\Uj@}Ax@kA|@{Ap@mBTa@XkAd@kAJg@PYN}@X{@j@cATk@DENYb@yAJADC\\y@R[Lo@`@u@Lo@^o@Ti@d@kB`@aAR]Li@Ts@TYJ?`@JnALTJR^|@Nd@Nv@Hj@LdAZx@b@n@DRDtAP`A`@v@`@jAZ",
+      "starred": false,
+      "elevation_profile": "https://d3o5xota0a1fcr.cloudfront.net/v6/charts/JSUFKBWDHPGJLOMQEYTQ52I7IKNC5YQDRE27E3YXHNNBTXIPB7ZW3CV2XXGTXG7OYA3V23KAQO24E7RH4UO7RJ46",
+      "local_legend_enabled": true,
+      "effort_count": 71,
+      "athlete_count": 47,
+      "star_count": 28
+    }
+  ]
+}

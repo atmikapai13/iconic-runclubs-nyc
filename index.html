@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="running-run.svg">
-    <title>NYC Run Clubs Map</title>
+    <title>NYC Races</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Google Fonts -->
@@ -23,15 +23,16 @@
         }
         .filter-controls {
             position: absolute;
-            top: 70px;
+            top: 80px;
             left: 10px;
             z-index: 1;
             background: #f8f2eb;
-            padding: 12px;
+            padding: 15px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            width: 20%;
-            min-width: 180px;
+            width: 24%;
+            min-width: 280px;
+            max-width: 380px;
             color: #333;
             border: 1px solid #e0e0e0;
         }
@@ -42,69 +43,73 @@
             font-size: 1rem;
         }
 
-        /* Custom Dropdown Styles */
+        /* Custom Dropdown Styles - Modernized with Beige/Red Theme */
         .custom-dropdown {
             position: relative;
             margin-bottom: 10px;
         }
         .dropdown-button {
             width: 100%;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            color: #333;
-            padding: 8px 12px;
-            border-radius: 6px;
+            background-color: white;
+            border: 1.5px solid #e8ddd3;
+            color: #4a4a4a;
+            padding: 8px 14px;
+            border-radius: 8px;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 0.85rem;
-            transition: all 0.2s;
+            font-size: 0.9rem;
+            transition: all 0.25s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         }
         .dropdown-button:hover {
-            background-color: #f0f0f0;
-            border-color: #ccc;
+            border-color: #d4c5b5;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            background-color: #fffcfa;
         }
         .dropdown-button.active {
             border-color: rgb(234, 47, 8);
-            background-color: #f0f0f0;
+            box-shadow: 0 0 0 3px rgba(234, 47, 8, 0.08);
+            background-color: #fff9f7;
         }
         .dropdown-chevron {
-            transition: transform 0.2s;
+            transition: transform 0.25s ease;
             font-size: 0.7rem;
-            color: #666;
+            color: #999;
         }
         .dropdown-chevron.open {
             transform: rotate(180deg);
+            color: rgb(234, 47, 8);
         }
         .dropdown-panel {
             position: absolute;
             top: 100%;
             left: 0;
             right: 0;
-            background-color: #f8f2eb;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            margin-top: 4px;
+            background-color: white;
+            border: 1.5px solid #e8ddd3;
+            border-radius: 8px;
+            margin-top: 6px;
             max-height: 200px;
             overflow-y: auto;
             z-index: 10;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
             display: none;
         }
         .dropdown-panel.open {
             display: block;
         }
         .dropdown-option {
-            padding: 8px 12px;
+            padding: 10px 14px;
             cursor: pointer;
             display: flex;
             align-items: center;
-            transition: background-color 0.15s;
-            color: #333;
+            transition: background-color 0.2s ease;
+            color: #4a4a4a;
         }
         .dropdown-option:hover {
-            background-color: #f5f5f5;
+            background-color: #fff9f7;
         }
         .dropdown-option input[type="checkbox"] {
             margin-right: 8px;
@@ -137,13 +142,20 @@
         }
         .filter-controls .btn-outline-secondary {
             background-color: white;
-            border-color: #ddd;
-            color: #333;
+            border: 1.5px solid #e8ddd3;
+            color: #666;
+            border-radius: 8px;
+            padding: 6px 16px;
+            font-size: 0.85rem;
+            transition: all 0.25s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         }
         .filter-controls .btn-outline-secondary:hover {
             background-color: rgb(234, 47, 8);
             border-color: rgb(234, 47, 8);
             color: white;
+            box-shadow: 0 2px 6px rgba(234, 47, 8, 0.2);
+            transform: translateY(-1px);
         }
         .meeting-times {
             text-align: center;
@@ -194,6 +206,7 @@
         }
         .modal-header {
             border-bottom: 1px solid #e0e0e0 !important;
+            padding: 1rem 1rem 0.75rem 1rem !important;
         }
         .modal-footer {
             border-top: 1px solid #e0e0e0 !important;
@@ -206,6 +219,46 @@
         .modal-header .close:hover {
             color: rgb(234, 47, 8) !important;
             opacity: 1;
+        }
+
+        /* Desktop Modal Positioning - Top Right Corner */
+        @media (min-width: 768px) {
+            .modal {
+                pointer-events: none;
+            }
+            .modal-dialog {
+                position: fixed;
+                top: -200px;
+                right: 20px;
+                left: auto;
+                margin: 0;
+                max-width: 320px;
+                width: 320px;
+                pointer-events: auto;
+                transform: none !important; /* disable Bootstrap's translateY(-50%) */
+            }
+            .modal-dialog-segment {
+                position: fixed;
+                top: -80px;
+                right: 20px;
+                left: auto;
+                margin: 0;
+                max-width: 320px;
+                width: 320px;
+                pointer-events: auto;
+                transform: none !important;
+            }
+            .modal-content {
+                box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+                border-radius: 10px;
+            }
+        }
+
+        /* Mobile Modal - Keep Centered */
+        @media (max-width: 767px) {
+            .modal-dialog {
+                margin: 1.75rem auto;
+            }
         }
         #runClubName {
             color: #333 !important;
@@ -250,37 +303,152 @@
         .esri-ui-bottom-right {
             padding-bottom: 80px;
         }
+
+        /* Collapsible Section Styles - Minimal Design with Divider */
+        .collapsible-section {
+            margin-bottom: 10px;
+        }
+        .collapsible-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+            transition: border-color 0.2s;
+            user-select: none;
+        }
+        .collapsible-header:hover {
+            border-bottom-color: rgb(234, 47, 8);
+        }
+        .collapsible-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #333;
+        }
+        .collapsible-chevron {
+            transition: transform 0.3s ease;
+            font-size: 0.7rem;
+            color: #999;
+        }
+        .collapsible-chevron.open {
+            transform: rotate(180deg);
+        }
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.35s ease, opacity 0.25s ease;
+        }
+        .collapsible-content.open {
+            max-height: 1000px;
+            opacity: 1;
+            overflow: visible;
+        }
+        .collapsible-content-inner {
+            padding: 12px 0 0 0;
+        }
+        .feature-checkbox-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px 12px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: background-color 0.2s ease;
+        }
+        .feature-checkbox-item:hover {
+            background-color: #fff9f7;
+        }
+        .feature-checkbox-item:last-child {
+            margin-bottom: 0;
+        }
+        .feature-checkbox-item input[type="checkbox"] {
+            margin-right: 10px;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+            accent-color: rgb(234, 47, 8);
+        }
+        .feature-checkbox-item span {
+            cursor: pointer;
+            margin: 0;
+            font-size: 0.9rem;
+            color: #4a4a4a;
+        }
+
+        /* Segment Item Styles */
+        .segment-item {
+            padding: 10px;
+            margin-bottom: 8px;
+            background: white;
+            border: 1px solid #e8ddd3;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .segment-item:hover {
+            border-color: rgb(234, 47, 8);
+            box-shadow: 0 2px 6px rgba(234, 47, 8, 0.1);
+        }
+        .segment-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        .segment-stats {
+            font-size: 0.7rem;
+            color: #666;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .segment-stat {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-dark fixed-top">
-        <span class="navbar-brand mb-0 h1 mx-auto" style="font-size: 15px;">Iconic NYC Run Clubs</span>
+        <span class="navbar-brand mb-0 h1 mx-auto" style="font-size: 30px !important;">NYC Races</span>
     </nav>
     <footer class="navbar navbar-dark fixed-bottom">
         <div class="container text-center d-flex flex-column">
-            <span class="mb-0 h5 mx-auto" style="font-size: 10px;">
-                <a href="https://atmikapai.dev/" target="_blank" style="color: inherit; font-size: 10px">By Atmika Pai</a>
+            <span class="mb-0 h5 mx-auto" style="font-size: 12px;font-weight: 400;">
+                By <a href="https://atmikapai.dev/" target="_blank" style="color: inherit; font-weight: 400;font-size: 12px">Atmika Pai</a>
             </span>
-            <div style="font-size: 10px; margin-top: 2px;">
-                <span><a href="https://docs.google.com/spreadsheets/d/1QFRce-siqNQsuTEtmCf4zg5uE0W4fTPdJjEDbDVNRLQ/edit?usp=sharing" target="_blank">Original Run Club List</a></span>
-                <span class="mx-1">|</span>
-                <span>Inspired by <a href="https://www.iconicsandwiches.com/" target="_blank">Dan Dewitz's Iconic Sandwiches</a></span>
+            <div style="font-size: 8px; margin-top: 1px; margin-bottom: 2px; font-weight: 400">
+                <span>Part of <a href="https://medium.com/map-nyc" target="_blank" style="font-weight: 400; font-style:italics;">The New York Trilogy</a></span>
                 
             </div>
         </div>
     </footer>
 
-    <!-- Filter Controls -->
+    <!-- Unified Filter Controls -->
     <div class="filter-controls">
         <div style="margin-bottom: 15px; padding-bottom: 12px; border-bottom: 1px solid #e0e0e0;">
             <p style="font-size: 1.0rem; line-height: 1.4; margin: 0; color: #555;">
-                <span style="color: rgb(234, 47, 8); font-weight: 700;">New York City</span> is home to the world's most iconic marathon and a vibrant running community. From Central Park loops to Brooklyn bridges, find your crew among 200+ run clubs across all five boroughs.
+                <span style="color: rgb(234, 47, 8); font-weight: 700;">New York City</span> is home to one of Abbott's World Marathon Majors and an unequivocal vibrant running community. From Central Park loops to Brooklyn bridges and five panoramic islands, running in NYC is akin to carving out an oasis in the concrete jungle. Here's a tool to find your crew among 200+ run clubs, a new running track, or amenities:
             </p>
         </div>
 
-        <!-- Borough Dropdown -->
+        <!-- Section 1: Run Clubs -->
+        <div class="collapsible-section">
+            <div class="collapsible-header" data-section="runclubs">
+                <div class="collapsible-title">Run Clubs</div>
+                <span class="collapsible-chevron">▼</span>
+            </div>
+            <div class="collapsible-content" data-content="runclubs">
+                <div class="collapsible-content-inner">
+                    <div style="font-size: 0.7rem; color: #999; padding: 0 0 10px 0; line-height: 1.4; border-bottom: 1px solid #e8e8e8; margin-bottom: 12px;">
+                        Run club data is sourced from <a href="https://www.instagram.com/shaylaruns/" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">@shaylaruns'</a>, <a href="https://docs.google.com/spreadsheets/d/1QFRce-siqNQsuTEtmCf4zg5uE0W4fTPdJjEDbDVNRLQ/edit?usp=sharing" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">delicious spreadsheet</a>, which keeps track of 200+ NYC run clubs with meeting locations, times, and distances.
+                    </div>
+                    <!-- Borough Dropdown -->
         <div class="custom-dropdown">
             <div class="dropdown-button" data-dropdown="borough">
                 <span class="dropdown-text">All Boroughs</span>
@@ -392,11 +560,101 @@
             </div>
         </div>
 
-        <div class="text-left" style="font-size: 10px; color: #666; margin-top: 10px;">
-            Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> clubs
+                    <div class="text-left" style="font-size: 0.5rem; color: #bbb; margin: 0px 0 8px 0; font-weight: 400;">
+                        Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> clubs
+                    </div>
+
+                    <button id="resetFilters" class="btn btn-sm btn-outline-secondary" style="width: 100%;">Reset Filters</button>
+                </div>
+            </div>
         </div>
 
-        <button id="resetFilters" class="btn btn-sm btn-outline-secondary mt-2">Reset Filters</button>
+        <!-- Section 2: Running Locations -->
+        <div class="collapsible-section">
+            <div class="collapsible-header" data-section="locations">
+                <div class="collapsible-title">Running Tracks</div>
+                <span class="collapsible-chevron">▼</span>
+            </div>
+            <div class="collapsible-content" data-content="locations">
+                <div class="collapsible-content-inner">
+                    <div style="font-size: 0.7rem; color: #999; padding: 0 0 10px 0; line-height: 1.4; border-bottom: 1px solid #e8e8e8; margin-bottom: 12px;">
+                        Running pathway data is sourced from <a href="https://livingatlas.arcgis.com/en/browse/#d=2&q=openstreetmap" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">Esri's Living Atlas</a> OpenStreetMap layers: <a href="https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/OSM_NA_Leisure/FeatureServer/0" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">OSM_NA_Leisure</a> for parks and tracks, and <a href="https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/OSM_NA_Highways/FeatureServer/0" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">OSM_NA_Highways</a> for paths. Parks are filtered by <code style="background: #f5f5f5; padding: 2px 4px; border-radius: 3px;">leisure=park</code>, tracks by <code style="background: #f5f5f5; padding: 2px 4px; border-radius: 3px;">leisure=track</code>, and paths by <code style="background: #f5f5f5; padding: 2px 4px; border-radius: 3px;">highway IN ('path','footway','pedestrian','cycleway')</code>. Data updates every 5-15 minutes from community OSM edits.
+                    </div>
+                    <label class="feature-checkbox-item">
+                        <input type="checkbox" id="toggle-parks">
+                        <span>Parks & Green Spaces</span>
+                    </label>
+
+                    <label class="feature-checkbox-item">
+                        <input type="checkbox" id="toggle-tracks">
+                        <span>Running Tracks</span>
+                    </label>
+
+                    <label class="feature-checkbox-item">
+                        <input type="checkbox" id="toggle-paths">
+                        <span>Running Paths & Trails</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Strava Segments -->
+        <div class="collapsible-section">
+            <div class="collapsible-header" data-section="social">
+                <div class="collapsible-title">Strava Segments</div>
+                <span class="collapsible-chevron">▼</span>
+            </div>
+            <div class="collapsible-content" data-content="social">
+                <div class="collapsible-content-inner">
+                    <div style="font-size: 0.7rem; color: #999; padding: 0 0 10px 0; line-height: 1.4; border-bottom: 1px solid #e8e8e8; margin-bottom: 12px;">
+                        <a href="https://www.strava.com" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">Strava</a>'s segment is a user-created section of road or trail where athletes compete for fastest times. We use the <a href="https://developers.strava.com/docs/reference/#api-Segments-exploreSegments" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">Explore Segments endpoint</a> to fetch the top 10 most popular segments per selected borough, then some stats (athlete count, elevation, distance) via the <a href="https://developers.strava.com/docs/reference/#api-Segments-getSegmentById" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">Get Segment endpoint</a>. Segment popularity is determined by community activity and updates dynamically.
+                    </div>
+
+                    <div style="margin-bottom: 12px;">
+                        <button id="load-trending" class="btn btn-sm btn-outline-secondary" style="width: 100%; font-size: 0.85rem;">
+                            Load Trending Routes
+                        </button>
+                    </div>
+
+                    <div id="trending-segments" style="display: none;">
+                        <div style="font-size: 0.75rem; color: #666; margin-bottom: 8px; font-weight: 600;">
+                            Trending This Week
+                        </div>
+                        <div id="segments-list" style="max-height: 300px; overflow-y: auto;">
+                            <!-- Segments will be dynamically loaded here -->
+                        </div>
+                    </div>
+
+                    <div id="loading-segments" style="display: none; text-align: center; padding: 20px; font-size: 0.75rem; color: #999;">
+                        Loading trending routes...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Amenities -->
+        <div class="collapsible-section">
+            <div class="collapsible-header" data-section="amenities">
+                <div class="collapsible-title">Amenities</div>
+                <span class="collapsible-chevron">▼</span>
+            </div>
+            <div class="collapsible-content" data-content="amenities">
+                <div class="collapsible-content-inner">
+                    <div style="font-size: 0.7rem; color: #999; padding: 0 0 10px 0; line-height: 1.4; border-bottom: 1px solid #e8e8e8; margin-bottom: 12px;">
+                        Amenity locations are sourced from <a href="https://livingatlas.arcgis.com/en/browse/#d=2&q=openstreetmap" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">Esri's Living Atlas</a> <a href="https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/OSM_NA_Amenities/FeatureServer/0" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">OSM_NA_Amenities layer</a>. Water fountains are tagged as <code style="background: #f5f5f5; padding: 2px 4px; border-radius: 3px;">amenity=drinking_water</code> and restrooms as <code style="background: #f5f5f5; padding: 2px 4px; border-radius: 3px;">amenity=toilets</code> in the OSM database. These points are community-mapped and updated every 5 minutes, though coverage may vary by neighborhood. Runners can contribute missing amenities directly to <a href="https://www.openstreetmap.org" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">OpenStreetMap.org</a>.
+                    </div>
+                    <label class="feature-checkbox-item">
+                        <input type="checkbox" id="toggle-water">
+                        <span>Water Fountains</span>
+                    </label>
+
+                    <label class="feature-checkbox-item">
+                        <input type="checkbox" id="toggle-toilets">
+                        <span>Restrooms</span>
+                    </label>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="map"></div>
@@ -406,9 +664,9 @@
         <div class="modal-dialog modal-dialog-centered modal" role="document">
             <div class="modal-content">
                 <div class="modal-header w-100 d-flex flex-column align-items-center">
-                                            <h3 id="runClubName" class="font-weight-bold mb-1 text-center"></h3>
-                        <h5 id="address" class="mt-2 text-center mb-0"></h5>
-                        <h5 id="borough" class="mt-2 text-center"></h5>
+                                            <h4 id="runClubName" class="font-weight-bold mb-2 text-center" style="font-size: 1.1rem; line-height: 1.3;"></h4>
+                        <div id="address" class="text-center mb-1" style="font-size: 0.8rem; color: #888; line-height: 1.4;"></div>
+                        <div id="borough" class="text-center" style="font-size: 0.75rem; color: #999; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;"></div>
                     <button type="button" class="close position-absolute" style="right: 15px; top: 15px;" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -418,6 +676,29 @@
                     <p id="distance" class="mt-1 mb-1 text-center"></p>
                     <div id="meetingTimes" class="mt-1 mb-3 meeting-times"></div>
                     <p id="clubWebsite" class="mb-3 text-center"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segments Modal -->
+    <div class="modal fade" id="segmentsModal" tabindex="-1" role="dialog" aria-labelledby="segmentsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-segment modal-dialog-centered modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header w-100 d-flex flex-column align-items-center">
+                    <h4 id="segmentsModalTitle" class="font-weight-bold mb-2 text-center" style="font-size: 1.1rem; line-height: 1.3;">Trending Strava Segments</h4>
+                    <button type="button" class="close position-absolute" style="right: 15px; top: 15px;" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body" style="padding: 15px;">
+                    <div id="segments-list-modal" style="max-height: 400px; overflow-y: auto;">
+                        <!-- Segments will be dynamically loaded here -->
+                    </div>
+                    <div id="loading-segments-modal" style="display: none; text-align: center; padding: 20px; font-size: 0.75rem; color: #999;">
+                        Loading trending routes...
+                    </div>
                 </div>
             </div>
         </div>
@@ -505,7 +786,8 @@
                     'borough': 'All Boroughs',
                     'dayType': 'All Days',
                     'day': 'Any Day',
-                    'time': 'Any Time'
+                    'time': 'Any Time',
+                    'segments-borough': 'All Boroughs'
                 };
 
                 if (checkedCount === 0) {
@@ -524,6 +806,41 @@
             document.addEventListener('DOMContentLoaded', initDropdowns);
         } else {
             initDropdowns();
+        }
+
+        // Initialize collapsible sections (accordion behavior - only one open at a time)
+        function initCollapsibleSections() {
+            document.querySelectorAll('.collapsible-header').forEach(function(header) {
+                header.addEventListener('click', function() {
+                    var sectionName = this.getAttribute('data-section');
+                    var content = document.querySelector('[data-content="' + sectionName + '"]');
+                    var chevron = this.querySelector('.collapsible-chevron');
+                    var isCurrentlyOpen = this.classList.contains('active');
+
+                    // Close all sections first
+                    document.querySelectorAll('.collapsible-header').forEach(function(h) {
+                        h.classList.remove('active');
+                        h.querySelector('.collapsible-chevron').classList.remove('open');
+                    });
+                    document.querySelectorAll('.collapsible-content').forEach(function(c) {
+                        c.classList.remove('open');
+                    });
+
+                    // If the clicked section was not open, open it
+                    if (!isCurrentlyOpen) {
+                        this.classList.add('active');
+                        content.classList.add('open');
+                        chevron.classList.add('open');
+                    }
+                });
+            });
+        }
+
+        // Initialize collapsible sections after DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initCollapsibleSections);
+        } else {
+            initCollapsibleSections();
         }
 
         // Initialize map when ArcGIS is loaded
@@ -569,6 +886,137 @@
             // Create graphics layer for markers (no clustering)
             var graphicsLayer = new GraphicsLayer();
             map.add(graphicsLayer);
+
+            // Create OSM Feature Layers from Esri Living Atlas
+
+            // 1. Parks and Green Spaces
+            var parksLayer = new FeatureLayer({
+                url: "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/OSM_NA_Leisure/FeatureServer/0",
+                definitionExpression: "leisure = 'park'",
+                minScale: 0,
+                maxScale: 0,
+                visible: false,
+                opacity: 0.4,
+                renderer: {
+                    type: "simple",
+                    symbol: {
+                        type: "simple-fill",
+                        color: [34, 139, 34],  // Forest green with transparency
+                        outline: {
+                            color: [34, 139, 34, 0.6],
+                            width: 1
+                        }
+                    }
+                },
+                popupTemplate: {
+                    title: "{name}",
+                    content: "<b>Type:</b> Park<br><b>Leisure Type:</b> {leisure}"
+                }
+            });
+            map.add(parksLayer);
+
+            // 2. Running Tracks
+            var tracksLayer = new FeatureLayer({
+                url: "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/OSM_NA_Leisure/FeatureServer/0",
+                definitionExpression: "leisure = 'track' OR leisure = 'pitch'",
+                minScale: 0,
+                maxScale: 0,
+                visible: false,
+                opacity: 0.7,
+                renderer: {
+                    type: "simple",
+                    symbol: {
+                        type: "simple-fill",
+                        color: [39, 95, 125, 0.4],  // Brand color
+                        outline: {
+                            color: [39, 95, 125, 0.6],
+                            width: 2
+                        }
+                    }
+                },
+                popupTemplate: {
+                    title: "{name}",
+                    content: "<b>Type:</b> {leisure}<br><b>Sport:</b> {sport}<br><b>Surface:</b> {surface}"
+                }
+            });
+            map.add(tracksLayer);
+
+            // 3. Running Paths and Trails
+            var pathsLayer = new FeatureLayer({
+                url: "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/OSM_NA_Highways/FeatureServer/0",
+                definitionExpression: "highway IN ('path', 'footway', 'pedestrian', 'cycleway')",
+                minScale: 0,
+                maxScale: 0,
+                visible: false,
+                opacity: 0.6,
+                renderer: {
+                    type: "simple",
+                    symbol: {
+                        type: "simple-line",
+                        color: [128, 128, 128, 0.7],  // Gray
+                        width: 2,
+                        style: "short-dot"
+                    }
+                },
+                popupTemplate: {
+                    title: "Path",
+                    content: "<b>Type:</b> {highway}<br><b>Name:</b> {name}"
+                }
+            });
+            map.add(pathsLayer);
+
+            // 4. Water Fountains
+            var waterLayer = new FeatureLayer({
+                url: "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/OSM_NA_Amenities/FeatureServer/0",
+                definitionExpression: "amenity = 'drinking_water'",
+                minScale: 0,
+                maxScale: 0,
+                visible: false,
+                renderer: {
+                    type: "simple",
+                    symbol: {
+                        type: "simple-marker",
+                        color: [0, 119, 190],  // Blue
+                        size: 5,
+                        style: "circle",
+                        outline: {
+                            color: [255, 255, 255],
+                            width: 1
+                        }
+                    }
+                },
+                popupTemplate: {
+                    title: "Water Fountain",
+                    content: "<b>Type:</b> Drinking Water<br><b>Location:</b> {name}"
+                }
+            });
+            map.add(waterLayer);
+
+            // 5. Public Restrooms
+            var toiletsLayer = new FeatureLayer({
+                url: "https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/OSM_NA_Amenities/FeatureServer/0",
+                definitionExpression: "amenity = 'toilets'",
+                minScale: 0,
+                maxScale: 0,
+                visible: false,
+                renderer: {
+                    type: "simple",
+                    symbol: {
+                        type: "simple-marker",
+                        color: [138, 43, 226],  // Purple
+                        size: 5,
+                        outline: {
+                            color: [255, 255, 255],
+                            width: 1
+                        }
+                    }
+                },
+                popupTemplate: {
+                    title: "Public Restroom",
+                    content: "<b>Type:</b> Restroom<br><b>Fee:</b> {fee}<br><b>Access:</b> {access}"
+                }
+            });
+            map.add(toiletsLayer);
 
             // Add individual markers
             locations.forEach(function(location) {
@@ -696,10 +1144,290 @@
                 applyFilters();
             });
 
+            // OSM Feature Layer Toggle Event Handlers
+            document.getElementById('toggle-parks').addEventListener('change', function() {
+                parksLayer.visible = this.checked;
+            });
+
+            document.getElementById('toggle-tracks').addEventListener('change', function() {
+                tracksLayer.visible = this.checked;
+            });
+
+            document.getElementById('toggle-paths').addEventListener('change', function() {
+                pathsLayer.visible = this.checked;
+            });
+
+            document.getElementById('toggle-water').addEventListener('change', function() {
+                waterLayer.visible = this.checked;
+            });
+
+            document.getElementById('toggle-toilets').addEventListener('change', function() {
+                toiletsLayer.visible = this.checked;
+            });
+
+            // Strava Segments Integration
+            var segmentsLayer = null;
+            var selectedSegmentId = null;
+            var allSegmentsData = [];
+
+            document.getElementById('load-trending').addEventListener('click', function() {
+                loadStravaSegments();
+            });
+
+            // Remove segment lines when modal is closed
+            $('#segmentsModal').on('hidden.bs.modal', function () {
+                if (segmentsLayer) {
+                    map.remove(segmentsLayer);
+                    segmentsLayer = null;
+                }
+            });
+
+            function loadStravaSegments() {
+                // Show loading state in modal
+                document.getElementById('loading-segments-modal').style.display = 'block';
+                document.getElementById('segments-list-modal').innerHTML = '';
+                document.getElementById('load-trending').disabled = true;
+
+                // Open the modal
+                $('#segmentsModal').modal({
+                    backdrop: false,
+                    keyboard: true
+                });
+
+                // Load segments from pre-generated JSON file (updated daily by GitHub Actions)
+                fetch('data/segments_data.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to load segments data');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Loaded ' + data.segment_count + ' segments from cache');
+                    console.log('Data last updated:', data.updated_at);
+
+                    // Store segments data globally for re-rendering
+                    allSegmentsData = data.segments;
+
+                    displaySegmentsInModal(data.segments);
+                    drawSegmentsOnMap(data.segments);
+
+                    // Hide loading state in modal
+                    document.getElementById('loading-segments-modal').style.display = 'none';
+                    document.getElementById('load-trending').textContent = 'Refresh Routes';
+                    document.getElementById('load-trending').disabled = false;
+                })
+                .catch(error => {
+                    console.error('Error loading Strava segments:', error);
+                    document.getElementById('loading-segments-modal').innerHTML =
+                        '<div style="color: rgb(234, 47, 8);">Error loading segments. Data file may not exist yet. Please try again later.</div>';
+                    document.getElementById('load-trending').disabled = false;
+                });
+            }
+
+            function displaySegmentsInModal(segments) {
+                var listContainer = document.getElementById('segments-list-modal');
+                listContainer.innerHTML = '';
+
+                if (!segments || segments.length === 0) {
+                    listContainer.innerHTML = '<div style="font-size: 0.75rem; color: #999; padding: 10px;">No segments found</div>';
+                    return;
+                }
+
+                // Sort segments by athlete count (descending)
+                segments.sort(function(a, b) {
+                    return (b.athlete_count || 0) - (a.athlete_count || 0);
+                });
+
+                segments.forEach(function(segment) {
+                    var segmentDiv = document.createElement('div');
+                    segmentDiv.className = 'segment-item';
+                    segmentDiv.setAttribute('data-segment-id', segment.id);
+
+                    var distanceMiles = (segment.distance * 0.000621371).toFixed(2);
+                    var elevationFeet = (segment.elev_difference * 3.28084).toFixed(0);
+
+                    // Format athlete count with commas for readability
+                    var athleteDisplay = segment.athlete_count ?
+                        segment.athlete_count.toLocaleString() + ' runners' :
+                        'Loading...';
+
+                    segmentDiv.innerHTML = `
+                        <div class="segment-name">${segment.name}</div>
+                        <div class="segment-stats">
+                            <span class="segment-stat">👥 ${athleteDisplay}</span>
+                            <span class="segment-stat">📏 ${distanceMiles} mi</span>
+                            <span class="segment-stat">⛰️ ${elevationFeet} ft</span>
+                        </div>
+                    `;
+
+                    // Click to zoom to segment and highlight it
+                    segmentDiv.addEventListener('click', function() {
+                        // Set selected segment
+                        selectedSegmentId = segment.id;
+
+                        // Remove previous highlight styling
+                        document.querySelectorAll('.segment-item').forEach(function(item) {
+                            item.style.backgroundColor = '';
+                            item.style.borderColor = '#e8ddd3';
+                        });
+
+                        // Highlight clicked segment in list
+                        segmentDiv.style.backgroundColor = '#f3e5f5';
+                        segmentDiv.style.borderColor = '#800080';
+
+                        // Scroll to this segment in the modal
+                        var modalList = document.getElementById('segments-list-modal');
+                        segmentDiv.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'nearest'
+                        });
+
+                        // Redraw map with highlighted segment
+                        drawSegmentsOnMap(allSegmentsData);
+
+                        // Zoom to segment
+                        zoomToSegment(segment);
+                    });
+
+                    listContainer.appendChild(segmentDiv);
+                });
+            }
+
+            function displaySegments(segments) {
+                var listContainer = document.getElementById('segments-list');
+                listContainer.innerHTML = '';
+
+                if (!segments || segments.length === 0) {
+                    listContainer.innerHTML = '<div style="font-size: 0.75rem; color: #999; padding: 10px;">No segments found</div>';
+                    return;
+                }
+
+                segments.forEach(function(segment) {
+                    var segmentDiv = document.createElement('div');
+                    segmentDiv.className = 'segment-item';
+                    segmentDiv.setAttribute('data-segment-id', segment.id);
+
+                    var distanceMiles = (segment.distance * 0.000621371).toFixed(2);
+                    var elevationFeet = (segment.elev_difference * 3.28084).toFixed(0);
+
+                    // Format athlete count with commas for readability
+                    var athleteDisplay = segment.athlete_count ?
+                        segment.athlete_count.toLocaleString() + ' runners' :
+                        'Loading...';
+
+                    segmentDiv.innerHTML = `
+                        <div class="segment-name">${segment.name}</div>
+                        <div class="segment-stats">
+                            <span class="segment-stat">👥 ${athleteDisplay}</span>
+                            <span class="segment-stat">📏 ${distanceMiles} mi</span>
+                            <span class="segment-stat">⛰️ ${elevationFeet} ft</span>
+                        </div>
+                    `;
+
+                    // Click to zoom to segment
+                    segmentDiv.addEventListener('click', function() {
+                        zoomToSegment(segment);
+                    });
+
+                    listContainer.appendChild(segmentDiv);
+                });
+            }
+
+            function drawSegmentsOnMap(segments) {
+                // Remove existing segments layer if any
+                if (segmentsLayer) {
+                    map.remove(segmentsLayer);
+                }
+
+                var segmentGraphics = segments.map(function(segment) {
+                    // Create polyline from segment points
+                    // Strava API returns [latitude, longitude], ArcGIS needs [longitude, latitude]
+                    var paths = [[
+                        [segment.start_latlng[1], segment.start_latlng[0]],
+                        [segment.end_latlng[1], segment.end_latlng[0]]
+                    ]];
+
+                    // Use purple for selected segment, black for others
+                    var isSelected = selectedSegmentId === segment.id;
+                    var lineColor = isSelected ? [128, 0, 128, 0.9] : [0, 0, 0, 0.7]; // Purple or black
+                    var lineWidth = isSelected ? 6 : 3;
+
+                    return new Graphic({
+                        geometry: {
+                            type: "polyline",
+                            paths: paths
+                        },
+                        symbol: {
+                            type: "simple-line",
+                            color: lineColor,
+                            width: lineWidth
+                        },
+                        attributes: segment
+                    });
+                });
+
+                segmentsLayer = new GraphicsLayer({
+                    graphics: segmentGraphics
+                });
+                map.add(segmentsLayer);
+
+                // Add click handler for segments on the map
+                view.on('click', function(event) {
+                    view.hitTest(event).then(function(response) {
+                        if (response.results.length) {
+                            var graphic = response.results.find(function(result) {
+                                return result.graphic.layer === segmentsLayer;
+                            });
+
+                            if (graphic && graphic.graphic.attributes) {
+                                var clickedSegment = graphic.graphic.attributes;
+
+                                // Set selected segment
+                                selectedSegmentId = clickedSegment.id;
+
+                                // Update highlighting in modal list
+                                document.querySelectorAll('.segment-item').forEach(function(item) {
+                                    item.style.backgroundColor = '';
+                                    item.style.borderColor = '#e8ddd3';
+
+                                    if (parseInt(item.getAttribute('data-segment-id')) === clickedSegment.id) {
+                                        item.style.backgroundColor = '#f3e5f5';
+                                        item.style.borderColor = '#800080';
+
+                                        // Scroll to this segment in the modal
+                                        item.scrollIntoView({
+                                            behavior: 'smooth',
+                                            block: 'nearest'
+                                        });
+                                    }
+                                });
+
+                                // Redraw map with new selection
+                                drawSegmentsOnMap(allSegmentsData);
+
+                                // Zoom to segment
+                                zoomToSegment(clickedSegment);
+                            }
+                        }
+                    });
+                });
+            }
+
+            function zoomToSegment(segment) {
+                // Zoom to segment location
+                // Strava uses start_latlng [lat, lng], ArcGIS needs [lng, lat]
+                view.goTo({
+                    center: [segment.start_latlng[1], segment.start_latlng[0]],
+                    zoom: 15
+                });
+            }
+
             // Show info modal function
             function showInfoModal(location) {
                 console.log("Location data:", location); // Debug log
-                
+
+                // Update modal content
                 document.getElementById('runClubName').textContent = location.RunClubName || 'Unknown Club';
                 document.getElementById('borough').textContent = location.Borough || 'Unknown Borough';
                 document.getElementById('address').textContent = location.Address || 'Address not available';
@@ -707,8 +1435,18 @@
                 document.getElementById('distance').innerHTML = location.Distance ? '<strong>Distance:</strong> ' + location.Distance : '';
                 document.getElementById('meetingTimes').innerHTML = '<strong>Days:</strong> ' + (location.Days || 'Check website') + '<br><strong>Times:</strong> ' + (location.Times || 'Check website');
                 document.getElementById('clubWebsite').innerHTML = '<a href="' + location.Website + '" target="_blank" class="btn btn-primary btn-sm">Visit Website</a>';
-                
-                $('#infoModal').modal('show');
+
+                // Check if modal is already open
+                var isOpen = $('#infoModal').hasClass('show');
+
+                if (!isOpen) {
+                    // Only open modal if it's not already showing
+                    $('#infoModal').modal({
+                        backdrop: false,
+                        keyboard: true
+                    });
+                }
+                // If already open, content is already updated above - no need to reopen
             }
 
             console.log("ArcGIS Map loaded successfully!");
