@@ -46,20 +46,20 @@
         /* Custom Dropdown Styles - Modernized with Beige/Red Theme */
         .custom-dropdown {
             position: relative;
-            margin-bottom: 10px;
+            margin-bottom: 6px;
         }
         .dropdown-button {
             width: 100%;
             background-color: white;
             border: 1.5px solid #e8ddd3;
             color: #4a4a4a;
-            padding: 8px 14px;
+            padding: 6px 12px;
             border-radius: 8px;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             transition: all 0.25s ease;
             box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         }
@@ -101,7 +101,7 @@
             display: block;
         }
         .dropdown-option {
-            padding: 10px 14px;
+            padding: 8px 12px;
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -169,7 +169,7 @@
             color: #ccc;
         }
         .filter-section {
-            margin-bottom: 10px;
+            margin-bottom: 6px;
         }
         .esri-view {
             height: 100vh;
@@ -471,7 +471,7 @@
             overflow: visible;
         }
         .collapsible-content-inner {
-            padding: 12px 0 0 0;
+            padding: 8px 0 0 0;
         }
         .feature-checkbox-item {
             display: flex;
@@ -570,7 +570,7 @@
             </div>
             <div class="collapsible-content" data-content="runclubs">
                 <div class="collapsible-content-inner">
-                    <div style="font-size: 0.7rem; color: #999; padding: 0 0 10px 0; line-height: 1.4; border-bottom: 1px solid #e8e8e8; margin-bottom: 12px;">
+                    <div style="font-size: 0.7rem; color: #999; padding: 0 0 6px 0; line-height: 1.3; border-bottom: 1px solid #e8e8e8; margin-bottom: 8px;">
                         Run club data is sourced from <a href="https://www.instagram.com/shaylaruns/" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">@shaylaruns'</a>, <a href="https://docs.google.com/spreadsheets/d/1QFRce-siqNQsuTEtmCf4zg5uE0W4fTPdJjEDbDVNRLQ/edit?usp=sharing" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">delicious spreadsheet</a>, which keeps track of 200+ NYC run clubs with meeting locations, times, and distances.
                     </div>
                     <!-- Borough Dropdown -->
@@ -685,11 +685,11 @@
             </div>
         </div>
 
-                    <div class="text-left" style="font-size: 0.5rem; color: #bbb; margin: 0px 0 8px 0; font-weight: 400;">
+                    <div class="text-left" style="font-size: 0.5rem; color: #bbb; margin: 4px 0 6px 0; font-weight: 400;">
                         Showing <span id="visibleCount">0</span> of <span id="totalCount">0</span> clubs
                     </div>
 
-                    <button id="resetFilters" class="btn btn-sm btn-outline-secondary" style="width: 100%;">Reset Filters</button>
+                    <button id="resetFilters" class="btn btn-sm btn-outline-secondary" style="width: 100%; padding: 5px 12px; font-size: 0.8rem;">Reset Filters</button>
                 </div>
             </div>
         </div>
@@ -703,7 +703,7 @@
             <div class="collapsible-content" data-content="locations">
                 <div class="collapsible-content-inner">
                     <div style="font-size: 0.7rem; color: #999; padding: 0 0 10px 0; line-height: 1.4; border-bottom: 1px solid #e8e8e8; margin-bottom: 12px;">
-                        Running pathway data is sourced from <a href="https://livingatlas.arcgis.com/en/browse/#d=2&q=openstreetmap" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">Esri's Living Atlas</a> OpenStreetMap layers: <a href="https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/OSM_NA_Leisure/FeatureServer/0" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">OSM_NA_Leisure</a> for parks and tracks, and <a href="https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/OSM_NA_Highways/FeatureServer/0" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">OSM_NA_Highways</a> for paths. Parks are filtered by <code style="background: #f5f5f5; padding: 2px 4px; border-radius: 3px;">leisure=park</code>, tracks by <code style="background: #f5f5f5; padding: 2px 4px; border-radius: 3px;">leisure=track</code>, and paths by <code style="background: #f5f5f5; padding: 2px 4px; border-radius: 3px;">highway IN ('path','footway','pedestrian','cycleway')</code>. Data updates every 5-15 minutes from community OSM edits.
+                        Running pathway data is sourced from <a href="https://livingatlas.arcgis.com/en/browse/#d=2&q=openstreetmap" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">Esri's Living Atlas</a> OpenStreetMap layers: <a href="https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/OSM_NA_Leisure/FeatureServer/0" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">OSM_NA_Leisure</a> for parks and tracks, and <a href="https://services6.arcgis.com/Do88DoK2xjTUCXd1/arcgis/rest/services/OSM_NA_Highways/FeatureServer/0" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">OSM_NA_Highways</a> for paths. Data updates every 5-15 minutes from community OSM edits.
                     </div>
                     <label class="feature-checkbox-item">
                         <input type="checkbox" id="toggle-parks">
@@ -731,12 +731,12 @@
             </div>
             <div class="collapsible-content" data-content="social">
                 <div class="collapsible-content-inner">
-                    <div style="font-size: 0.7rem; color: #999; padding: 0 0 10px 0; line-height: 1.4; border-bottom: 1px solid #e8e8e8; margin-bottom: 12px;">
+                    <div style="font-size: 0.7rem; color: #999; padding: 0 0 6px 0; line-height: 1.3; margin-bottom: 8px;">
                         <a href="https://www.strava.com" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">Strava</a>'s segment is a user-created section of road or trail where athletes compete for fastest times. We use the <a href="https://developers.strava.com/docs/reference/#api-Segments-exploreSegments" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">Explore Segments endpoint</a> to fetch the top 10 most popular segments per selected borough, then some stats (athlete count, elevation, distance) via the <a href="https://developers.strava.com/docs/reference/#api-Segments-getSegmentById" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">Get Segment endpoint</a>. Segment popularity is determined by community activity and updates dynamically.
                     </div>
 
-                    <div style="margin-bottom: 12px;">
-                        <button id="load-trending" class="btn btn-sm btn-outline-secondary" style="width: 100%; font-size: 0.85rem;">
+                    <div style="margin-bottom: 8px;">
+                        <button id="load-trending" class="btn btn-sm btn-outline-secondary" style="width: 100%; font-size: 0.85rem; padding: 5px 12px;">
                             Load Trending Routes
                         </button>
                     </div>
@@ -757,7 +757,28 @@
             </div>
         </div>
 
-        <!-- Section 4: Amenities -->
+        <!-- Section 4: Races & Marathons -->
+        <div class="collapsible-section">
+            <div class="collapsible-header" data-section="races">
+                <div class="collapsible-title">Marathons</div>
+                <span class="collapsible-chevron">▼</span>
+            </div>
+            <div class="collapsible-content" data-content="races">
+                <div class="collapsible-content-inner">
+                    <div style="font-size: 0.7rem; color: #999; padding: 0 0 6px 0; line-height: 1.3; margin-bottom: 8px;">
+                        A curated collection of NYC's most iconic races sourced from <a href="https://www.nyrr.org" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">New York Road Runners</a> and <a href="https://nycruns.com" target="_blank" style="color: rgb(234, 47, 8); text-decoration: none;">NYCRUNS</a>.
+                    </div>
+
+                    <div style="margin-bottom: 8px;">
+                        <button id="show-marathons" class="btn btn-sm btn-outline-secondary" style="width: 100%; font-size: 0.85rem; padding: 5px 12px;">
+                            Show Marathons in NYC
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5: Amenities -->
         <div class="collapsible-section">
             <div class="collapsible-header" data-section="amenities">
                 <div class="collapsible-title">Amenities</div>
@@ -832,6 +853,28 @@
         </div>
     </div>
 
+    <!-- Race Modal -->
+    <div class="modal fade" id="raceModal" tabindex="-1" role="dialog" aria-labelledby="raceModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header w-100 d-flex flex-column align-items-center">
+                    <h4 id="raceName" class="font-weight-bold mb-2 text-center" style="font-size: 1.1rem; line-height: 1.3;"></h4>
+                    <div id="raceDate" class="text-center mb-1" style="font-size: 0.8rem; color: #888; line-height: 1.4;"></div>
+                    <div id="raceBorough" class="text-center" style="font-size: 0.75rem; color: #999; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;"></div>
+                    <button type="button" class="close position-absolute" style="right: 15px; top: 15px;" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <p id="raceDistance" class="mt-1 mb-1 text-center"></p>
+                    <p id="raceLocation" class="mt-1 mb-3 text-center" style="font-size: 0.9rem; color: #666;"></p>
+                    <p id="raceRegistration" class="mb-3 text-center"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -841,7 +884,10 @@
     
     <!-- Run Clubs Data -->
     <script src="run_clubs_data.js"></script>
-    
+
+    <!-- Races Data -->
+    <script src="races_data.js"></script>
+
     <script>
         // Custom dropdown functionality
         function initDropdowns() {
@@ -1158,7 +1204,39 @@
             });
             map.add(toiletsLayer);
 
-            // Add individual markers
+            // Create graphics layer for race markers
+            var racesLayer = new GraphicsLayer({
+                visible: false  // Hidden by default
+            });
+            map.add(racesLayer);
+
+            // Add race markers
+            races.forEach(function(race) {
+                var point = {
+                    type: "point",
+                    longitude: race.longitude,
+                    latitude: race.latitude
+                };
+
+                var graphic = new Graphic({
+                    geometry: point,
+                    symbol: {
+                        type: "simple-marker",
+                        color: [77, 79, 80],  // rgb(77, 79, 80)
+                        size: 10,
+                        style: "circle",  // Different shape for races
+                        outline: {
+                            color: [255, 255, 255],
+                            width: 1
+                        }
+                    },
+                    attributes: race
+                });
+
+                racesLayer.add(graphic);
+            });
+
+            // Add individual run club markers
             locations.forEach(function(location) {
                 var point = {
                     type: "point",
@@ -1283,8 +1361,15 @@
                 view.hitTest(event).then(function(response) {
                     if (response.results.length > 0) {
                         var graphic = response.results[0].graphic;
-                        if (graphic && graphic.attributes && graphic.attributes.RunClubName) {
-                            showInfoModal(graphic.attributes);
+                        if (graphic && graphic.attributes) {
+                            // Check if it's a run club marker
+                            if (graphic.attributes.RunClubName) {
+                                showInfoModal(graphic.attributes);
+                            }
+                            // Check if it's a race marker
+                            else if (graphic.attributes.RaceName) {
+                                showRaceModal(graphic.attributes);
+                            }
                         }
                     }
                 });
@@ -1329,6 +1414,46 @@
 
             document.getElementById('toggle-toilets').addEventListener('change', function() {
                 toiletsLayer.visible = this.checked;
+            });
+
+            // Show Marathons Button Handler
+            document.getElementById('show-marathons').addEventListener('click', function() {
+                // Toggle visibility
+                racesLayer.visible = !racesLayer.visible;
+
+                // Update button text based on state
+                if (racesLayer.visible) {
+                    this.textContent = 'Hide Marathons';
+                } else {
+                    this.textContent = 'Show Marathons in NYC';
+                }
+
+                // On mobile, collapse the accordion after clicking
+                if (window.innerWidth <= 767) {
+                    var racesHeader = document.querySelector('.collapsible-header[data-section="races"]');
+                    var racesContent = document.querySelector('.collapsible-content[data-content="races"]');
+                    var chevron = racesHeader.querySelector('.collapsible-chevron');
+
+                    if (racesHeader && racesContent) {
+                        racesHeader.classList.remove('active');
+                        racesContent.classList.remove('open');
+                        if (chevron) {
+                            chevron.classList.remove('open');
+                        }
+                    }
+
+                    // Scroll to map after accordion collapse animation completes
+                    setTimeout(function() {
+                        var mapElement = document.getElementById('map');
+                        if (mapElement) {
+                            var mapPosition = mapElement.offsetTop;
+                            window.scrollTo({
+                                top: mapPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }, 200);
+                }
             });
 
             // Strava Segments Integration
@@ -1750,6 +1875,31 @@
                 if (!isOpen) {
                     // Only open modal if it's not already showing
                     $('#infoModal').modal({
+                        backdrop: window.innerWidth <= 767 ? true : false, // Enable backdrop on mobile
+                        keyboard: true
+                    });
+                }
+                // If already open, content is already updated above - no need to reopen
+            }
+
+            // Show race modal function
+            function showRaceModal(race) {
+                console.log("Race data:", race); // Debug log
+
+                // Update modal content
+                document.getElementById('raceName').textContent = race.RaceName || 'Unknown Race';
+                document.getElementById('raceDate').textContent = race.Date || 'Date TBA';
+                document.getElementById('raceBorough').textContent = race.Borough || 'Unknown Borough';
+                document.getElementById('raceDistance').innerHTML = race.Distance ? '<strong>Distance:</strong> ' + race.Distance : '';
+                document.getElementById('raceLocation').innerHTML = '<strong>Location:</strong> ' + (race.Location || race.Address || 'Location TBA');
+                document.getElementById('raceRegistration').innerHTML = '<a href="' + race.RegistrationURL + '" target="_blank" class="btn btn-primary btn-sm">Register Now</a>';
+
+                // Check if modal is already open
+                var isOpen = $('#raceModal').hasClass('show');
+
+                if (!isOpen) {
+                    // Only open modal if it's not already showing
+                    $('#raceModal').modal({
                         backdrop: window.innerWidth <= 767 ? true : false, // Enable backdrop on mobile
                         keyboard: true
                     });
