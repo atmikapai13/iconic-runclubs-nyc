@@ -2,40 +2,40 @@
 var races = [
     {
         RaceName: "TCS New York City Marathon",
-        Date: "November 3, 2024",
+        Date: "November 2026",
         Location: "Staten Island (Start) / Central Park (Finish)",
         Address: "Fort Wadsworth, Staten Island, NY",
         Distance: "26.2 miles",
         Borough: "Multi-Borough",
-        RegistrationURL: "https://www.nyrr.org/tcsnycmarathon",
+        RegistrationURL: "https://www.nyrr.org/tcsnycmarathon/runners/entry/2026",
         latitude: 40.6062,
         longitude: -74.0550
     },
     {
         RaceName: "United Airlines NYC Half",
-        Date: "March 16, 2025",
+        Date: "March 15, 2026",
         Location: "Brooklyn (Start) / Central Park (Finish)",
         Address: "Prospect Park, Brooklyn, NY",
         Distance: "13.1 miles",
         Borough: "Multi-Borough",
-        RegistrationURL: "https://www.nyrr.org/races/united-airlines-nyc-half",
+        RegistrationURL: "https://events.nyrr.org/united-airlines-nyc-half?_gl=1*19796h0*_gcl_au*MTk4MzU0NTE1OC4xNzYyOTY1NjI4",
         latitude: 40.6602,
         longitude: -73.9690
     },
     {
-        RaceName: "Brooklyn Half Marathon",
-        Date: "May 17, 2025",
+        RaceName: "NYC Runs Brooklyn Half Marathon",
+        Date: "April 26, 2026",
         Location: "Prospect Park",
         Address: "Prospect Park, Brooklyn, NY",
         Distance: "13.1 miles",
         Borough: "Brooklyn",
-        RegistrationURL: "https://www.nyrr.org/races/brooklynhalf",
+        RegistrationURL: "https://brooklynexperience.com/",
         latitude: 40.6602,
         longitude: -73.9690
     },
     {
         RaceName: "Percy Sutton Harlem 5K Run",
-        Date: "August 2025",
+        Date: "August 2026",
         Location: "Marcus Garvey Park",
         Address: "18 Mount Morris Park W, New York, NY",
         Distance: "5K",
@@ -46,7 +46,7 @@ var races = [
     },
     {
         RaceName: "NYRR Dash to the Finish Line 5K",
-        Date: "November 2, 2024",
+        Date: "November 2026",
         Location: "Central Park",
         Address: "Central Park West & 72nd St, New York, NY",
         Distance: "5K",
@@ -57,7 +57,7 @@ var races = [
     },
     {
         RaceName: "NYCRUNS Brooklyn Bridge Run",
-        Date: "April 2025",
+        Date: "April 2026",
         Location: "Brooklyn Bridge Park",
         Address: "Brooklyn Bridge Park, Brooklyn, NY",
         Distance: "10K/5K",
@@ -68,7 +68,7 @@ var races = [
     },
     {
         RaceName: "NYCRUNS Governors Island Races",
-        Date: "June 2025",
+        Date: "June 2026",
         Location: "Governors Island",
         Address: "Governors Island, New York, NY",
         Distance: "10K/5K",
@@ -79,7 +79,7 @@ var races = [
     },
     {
         RaceName: "NYCRUNS Roosevelt Island Run",
-        Date: "September 2025",
+        Date: "September 2026",
         Location: "Roosevelt Island",
         Address: "Roosevelt Island, New York, NY",
         Distance: "10K/5K",
@@ -90,7 +90,7 @@ var races = [
     },
     {
         RaceName: "Staten Island Half Marathon",
-        Date: "October 2025",
+        Date: "October 2026",
         Location: "Midland Beach",
         Address: "Midland Beach, Staten Island, NY",
         Distance: "13.1 miles",
@@ -101,7 +101,7 @@ var races = [
     },
     {
         RaceName: "NYRR Queens 10K",
-        Date: "April 2025",
+        Date: "April 2026",
         Location: "Flushing Meadows Corona Park",
         Address: "Flushing Meadows Corona Park, Queens, NY",
         Distance: "10K",
@@ -112,7 +112,7 @@ var races = [
     },
     {
         RaceName: "NYCRUNS Bronx 10 Miler",
-        Date: "October 2025",
+        Date: "October 2026",
         Location: "Van Cortlandt Park",
         Address: "Van Cortlandt Park, Bronx, NY",
         Distance: "10 miles",
@@ -123,7 +123,7 @@ var races = [
     },
     {
         RaceName: "NYRR Fred Lebow Manhattan Half",
-        Date: "January 2025",
+        Date: "January 2026",
         Location: "Central Park",
         Address: "Central Park, New York, NY",
         Distance: "13.1 miles",
@@ -134,7 +134,7 @@ var races = [
     },
     {
         RaceName: "NYCRUNS Gantry Plaza 5K",
-        Date: "July 2025",
+        Date: "July 2026",
         Location: "Gantry Plaza State Park",
         Address: "Gantry Plaza State Park, Queens, NY",
         Distance: "5K",
@@ -145,7 +145,7 @@ var races = [
     },
     {
         RaceName: "Brooklyn Marathon",
-        Date: "April 2025",
+        Date: "April 2026",
         Location: "Prospect Park",
         Address: "Prospect Park, Brooklyn, NY",
         Distance: "26.2 miles",
@@ -156,7 +156,7 @@ var races = [
     },
     {
         RaceName: "NYRR 5th Avenue Mile",
-        Date: "September 2025",
+        Date: "September 2026",
         Location: "5th Avenue",
         Address: "5th Avenue & 80th St, New York, NY",
         Distance: "1 mile",
