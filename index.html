@@ -283,7 +283,10 @@
 
         /* Mobile Layout - Filter Panel Above Map */
         @media (max-width: 767px) {
-            .modal-dialog {
+            /* Run club modal - centered with backdrop on mobile */
+            #infoModal .modal-dialog {
+                width: 90%;
+                max-width: 90%;
                 margin: 1.75rem auto;
             }
 
@@ -342,13 +345,13 @@
             }
             /* Three snap positions */
             #segmentsModal .modal-dialog-segment.peek {
-                transform: translateY(75vh) !important; /* Show bottom 25vh */
+                transform: translateY(55vh) !important; /* Show bottom 45vh - shows ~3-4 segments */
             }
             #segmentsModal .modal-dialog-segment.half {
-                transform: translateY(50vh) !important; /* Show bottom 50vh */
+                transform: translateY(35vh) !important; /* Show bottom 65vh */
             }
             #segmentsModal .modal-dialog-segment.full {
-                transform: translateY(20vh) !important; /* Show bottom 80vh */
+                transform: translateY(15vh) !important; /* Show bottom 85vh - nearly full screen */
             }
             #segmentsModal .modal-content {
                 border-radius: 16px 16px 0 0;
@@ -365,15 +368,17 @@
             }
             /* Drag handle */
             .bottom-sheet-handle {
-                width: 40px;
+                width: 50px;
                 height: 5px;
-                background-color: #ccc;
-                border-radius: 2px;
-                margin: 12px auto 8px;
+                background-color: #999;
+                border-radius: 3px;
+                margin: 10px auto 12px;
                 cursor: grab;
+                flex-shrink: 0; /* Prevent handle from shrinking */
             }
             .bottom-sheet-handle:active {
                 cursor: grabbing;
+                background-color: #666;
             }
             /* Backdrop overlay - removed to allow map interaction */
             .bottom-sheet-backdrop {
@@ -1361,16 +1366,16 @@
 
                     // Calculate current translateY based on position
                     var currentTranslateVh;
-                    if (currentPosition === 'peek') currentTranslateVh = 75;
-                    else if (currentPosition === 'half') currentTranslateVh = 50;
-                    else currentTranslateVh = 20;
+                    if (currentPosition === 'peek') currentTranslateVh = 55;      // 45vh visible
+                    else if (currentPosition === 'half') currentTranslateVh = 35; // 65vh visible
+                    else currentTranslateVh = 15;                                 // 85vh visible
 
                     // Calculate new translateY (dragging down increases, up decreases)
                     var deltaVh = (deltaY / window.innerHeight) * 100;
                     var newTranslateVh = currentTranslateVh + deltaVh;
 
-                    // Clamp between 20vh (fully expanded) and 100vh (hidden)
-                    newTranslateVh = Math.max(20, Math.min(100, newTranslateVh));
+                    // Clamp between 15vh (fully expanded) and 100vh (hidden)
+                    newTranslateVh = Math.max(15, Math.min(100, newTranslateVh));
 
                     sheet.style.transform = 'translateY(' + newTranslateVh + 'vh)';
                 });
@@ -1389,19 +1394,19 @@
                     var currentTranslateVh = (currentTranslateY / window.innerHeight) * 100;
 
                     // Determine closest snap point based on translateY
-                    if (currentTranslateVh > 85) {
-                        // Close the sheet (dragged down past 85vh)
+                    if (currentTranslateVh > 70) {
+                        // Close the sheet (dragged down past 70vh)
                         $('#segmentsModal').modal('hide');
-                    } else if (currentTranslateVh > 62.5) {
-                        // Snap to peek (75vh)
+                    } else if (currentTranslateVh > 45) {
+                        // Snap to peek (55vh = 45vh visible)
                         sheet.className = 'modal-dialog modal-dialog-segment modal-dialog-centered modal peek';
                         currentPosition = 'peek';
-                    } else if (currentTranslateVh > 35) {
-                        // Snap to half (50vh)
+                    } else if (currentTranslateVh > 25) {
+                        // Snap to half (35vh = 65vh visible)
                         sheet.className = 'modal-dialog modal-dialog-segment modal-dialog-centered modal half';
                         currentPosition = 'half';
                     } else {
-                        // Snap to full (20vh)
+                        // Snap to full (15vh = 85vh visible)
                         sheet.className = 'modal-dialog modal-dialog-segment modal-dialog-centered modal full';
                         currentPosition = 'full';
                     }
@@ -1683,7 +1688,7 @@
                 if (!isOpen) {
                     // Only open modal if it's not already showing
                     $('#infoModal').modal({
-                        backdrop: false,
+                        backdrop: window.innerWidth <= 767 ? true : false, // Enable backdrop on mobile
                         keyboard: true
                     });
                 }
