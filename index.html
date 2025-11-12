@@ -1183,6 +1183,33 @@
                 graphicsLayer.add(graphic);
             });
 
+            // Dynamic marker sizing based on zoom level
+            function updateMarkerSizes() {
+                var zoom = view.zoom;
+                // Calculate size: base size 8px at zoom 11, scale up/down with zoom
+                // Zoom 11 = 8px, Zoom 13 = 12px, Zoom 15 = 16px, Zoom 17 = 20px
+                var baseSize = 8;
+                var baseZoom = 11;
+                var scaleFactor = 2; // Increase by 2px per zoom level
+                var newSize = Math.max(6, Math.min(24, baseSize + (zoom - baseZoom) * scaleFactor));
+
+                // Update all run club markers
+                graphicsLayer.graphics.forEach(function(graphic) {
+                    graphic.symbol = {
+                        type: "simple-marker",
+                        color: [234, 47, 8],
+                        size: newSize,
+                        outline: {
+                            color: [255, 255, 255],
+                            width: 1
+                        }
+                    };
+                });
+            }
+
+            // Watch for zoom changes
+            view.watch("zoom", updateMarkerSizes);
+
             // Add widgets to the map (right side)
             var homeWidget = new Home({
                 view: view
@@ -1193,7 +1220,6 @@
             var attributionWidget = new Attribution({
                 view: view
             });
-            view.ui.add(attributionWidget, "manual");
             view.ui.add(attributionWidget, "bottom-right");
 
             // Update counters
@@ -1513,26 +1539,31 @@
                     `;
 
                     // Click to zoom to segment and highlight it
-                    segmentDiv.addEventListener('click', function() {
+                    segmentDiv.addEventListener('click', function(e) {
+                        e.stopPropagation(); // Prevent event bubbling
+
                         // Set selected segment
                         selectedSegmentId = segment.id;
 
-                        // Remove previous highlight styling
+                        // Remove previous highlight styling and pulse animation
                         document.querySelectorAll('.segment-item').forEach(function(item) {
                             item.style.backgroundColor = '';
                             item.style.borderColor = '#e8ddd3';
+                            item.classList.remove('segment-pulse');
                         });
 
                         // Highlight clicked segment in list
                         segmentDiv.style.backgroundColor = '#f3e5f5';
                         segmentDiv.style.borderColor = '#800080';
+                        segmentDiv.classList.add('segment-pulse');
 
                         // Scroll to this segment in the modal
-                        var modalList = document.getElementById('segments-list-modal');
-                        segmentDiv.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'nearest'
-                        });
+                        setTimeout(function() {
+                            segmentDiv.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'center'
+                            });
+                        }, 50);
 
                         // Redraw map with highlighted segment
                         drawSegmentsOnMap(allSegmentsData);
@@ -1653,10 +1684,21 @@
                                         // Scroll to this segment in the modal
                                         // Use setTimeout to ensure the scroll happens after the highlighting
                                         setTimeout(function() {
-                                            item.scrollIntoView({
-                                                behavior: 'smooth',
-                                                block: 'center'
-                                            });
+                                            // Scroll within the modal body container
+                                            var modalBody = item.closest('.modal-body');
+                                            if (modalBody) {
+                                                var itemTop = item.offsetTop;
+                                                var modalHeight = modalBody.clientHeight;
+                                                var itemHeight = item.clientHeight;
+                                                // Center the item in the modal
+                                                modalBody.scrollTop = itemTop - (modalHeight / 4) + (itemHeight / 4);
+                                            } else {
+                                                // Fallback to scrollIntoView if modal-body not found
+                                                item.scrollIntoView({
+                                                    behavior: 'smooth',
+                                                    block: 'center'
+                                                });
+                                            }
                                         }, 100);
                                     }
                                 });
@@ -1678,6 +1720,14 @@
                 view.goTo({
                     center: [segment.start_latlng[1], segment.start_latlng[0]],
                     zoom: 15
+                }, {
+                    duration: 800, // Smooth animation
+                    easing: "ease-in-out"
+                }).catch(function(error) {
+                    // Ignore navigation errors (e.g., if another navigation is in progress)
+                    if (error.name !== "AbortError") {
+                        console.error("Error during map navigation:", error);
+                    }
                 });
             }
 
