@@ -198,18 +198,6 @@
             color: rgb(234, 47, 8) !important;
         }
 
-        /* Header footer info - hidden on desktop, shown on mobile */
-        .header-footer-info {
-            display: none;
-        }
-        .header-footer-info a {
-            color: #666 !important;
-            text-decoration: none;
-        }
-        .header-footer-info a:hover {
-            color: rgb(234, 47, 8) !important;
-        }
-
         /* Pulse animation for selected segment */
         @keyframes segmentPulse {
             0%, 100% {
@@ -295,24 +283,6 @@
 
         /* Mobile Layout - Filter Panel Above Map */
         @media (max-width: 767px) {
-            /* Show header footer info on mobile */
-            .header-footer-info {
-                display: block;
-                opacity: 1;
-                transition: opacity 0.3s ease, max-height 0.3s ease;
-                max-height: 100px;
-                overflow: hidden;
-            }
-            .header-footer-info.hidden {
-                opacity: 0;
-                max-height: 0;
-            }
-
-            /* Hide actual footer on mobile */
-            footer {
-                display: none !important;
-            }
-
             /* Run club modal - centered with backdrop on mobile */
             #infoModal .modal-dialog {
                 width: 90%;
@@ -570,18 +540,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-dark fixed-top">
-        <div class="d-flex flex-column align-items-center w-100">
-            <span class="navbar-brand mb-0 h1" style="font-size: 30px !important;">NYC Races</span>
-            <!-- Footer info shown in header on mobile only -->
-            <div class="header-footer-info" id="headerFooterInfo">
-                <div class="text-center" style="font-size: 12px; font-weight: 400; color: #666;">
-                    Built by <a href="https://atmikapai.dev/" target="_blank" style="color: #666 !important; font-weight: 400; font-size: 12px; text-decoration: none;">Atmika Pai</a>
-                </div>
-                <div class="text-center" style="font-size: 8px; margin-top: 1px; font-weight: 400; color: #666;">
-                    Part of <a href="https://medium.com/map-nyc" target="_blank" style="color: #666 !important; font-weight: 400; font-size: 8px; text-decoration: none;">The New York Trilogy</a>
-                </div>
-            </div>
-        </div>
+        <span class="navbar-brand mb-0 h1 mx-auto" style="font-size: 30px !important;">NYC Races</span>
     </nav>
     <footer class="navbar navbar-dark fixed-bottom">
         <div class="container text-center d-flex flex-column">
@@ -1022,30 +981,6 @@
             document.addEventListener('DOMContentLoaded', initCollapsibleSections);
         } else {
             initCollapsibleSections();
-        }
-
-        // Mobile: Hide header footer info on scroll
-        if (window.innerWidth <= 767) {
-            var headerFooterInfo = document.getElementById('headerFooterInfo');
-            var lastScrollY = 0;
-
-            window.addEventListener('scroll', function() {
-                var currentScrollY = window.scrollY;
-
-                if (currentScrollY > 50) {
-                    // Scrolled down - hide footer info
-                    if (headerFooterInfo) {
-                        headerFooterInfo.classList.add('hidden');
-                    }
-                } else {
-                    // At top - show footer info
-                    if (headerFooterInfo) {
-                        headerFooterInfo.classList.remove('hidden');
-                    }
-                }
-
-                lastScrollY = currentScrollY;
-            });
         }
 
         // Initialize map when ArcGIS is loaded
