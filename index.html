@@ -177,7 +177,7 @@
         .navbar {
             background-color: #f8f2eb !important;
             border-bottom: 1px solid #e0e0e0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         .navbar-brand {
             font-family: 'Bebas Neue', sans-serif !important;
@@ -196,6 +196,21 @@
         }
         footer a:hover {
             color: rgb(234, 47, 8) !important;
+        }
+
+        /* Pulse animation for selected segment */
+        @keyframes segmentPulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(128, 0, 128, 0.4);
+            }
+            50% {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 4px rgba(128, 0, 128, 0.2);
+            }
+        }
+        .segment-pulse {
+            animation: segmentPulse 0.6s ease-in-out;
         }
 
         /* Modal Light Theme */
@@ -252,12 +267,117 @@
                 box-shadow: 0 4px 20px rgba(0,0,0,0.15);
                 border-radius: 10px;
             }
+            /* Hide bottom sheet elements on desktop */
+            .bottom-sheet-handle {
+                display: none;
+            }
+            .bottom-sheet-backdrop {
+                display: none !important;
+            }
+            /* Limit segment list height on desktop */
+            #segments-list-modal {
+                max-height: 400px;
+                overflow-y: auto;
+            }
         }
 
-        /* Mobile Modal - Keep Centered */
+        /* Mobile Layout - Filter Panel Above Map */
         @media (max-width: 767px) {
             .modal-dialog {
                 margin: 1.75rem auto;
+            }
+
+            /* Filter panel - inline above map instead of floating overlay */
+            .filter-controls {
+                position: relative;
+                top: auto;
+                left: auto;
+                width: 100%;
+                min-width: auto;
+                max-width: none;
+                margin: 60px 0 0 0; /* Add top margin to clear the fixed navbar */
+                border-radius: 0;
+                box-shadow: none;
+                border-left: none;
+                border-right: none;
+                padding: 15px;
+            }
+
+            /* Map - fills space below filter panel */
+            #map {
+                height: calc(100vh - 180px); /* Adjust based on header + footer height */
+                width: 100%;
+            }
+
+            /* Start all accordions collapsed on mobile */
+            .collapsible-content {
+                max-height: 0;
+                opacity: 0;
+            }
+            .collapsible-content.open {
+                max-height: 1000px;
+                opacity: 1;
+            }
+
+            /* Segments modal - bottom sheet on mobile */
+            #segmentsModal {
+                display: none;
+                pointer-events: none; /* Allow clicks to pass through */
+            }
+            #segmentsModal.show {
+                display: block !important;
+            }
+            #segmentsModal .modal-dialog-segment {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                transform: translateY(100%); /* Start off screen */
+                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                pointer-events: auto; /* Enable clicks on the sheet itself */
+                z-index: 1050;
+            }
+            /* Three snap positions */
+            #segmentsModal .modal-dialog-segment.peek {
+                transform: translateY(75vh) !important; /* Show bottom 25vh */
+            }
+            #segmentsModal .modal-dialog-segment.half {
+                transform: translateY(50vh) !important; /* Show bottom 50vh */
+            }
+            #segmentsModal .modal-dialog-segment.full {
+                transform: translateY(20vh) !important; /* Show bottom 80vh */
+            }
+            #segmentsModal .modal-content {
+                border-radius: 16px 16px 0 0;
+                border: none;
+                box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #segmentsModal .modal-body {
+                flex: 1;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            /* Drag handle */
+            .bottom-sheet-handle {
+                width: 40px;
+                height: 5px;
+                background-color: #ccc;
+                border-radius: 2px;
+                margin: 12px auto 8px;
+                cursor: grab;
+            }
+            .bottom-sheet-handle:active {
+                cursor: grabbing;
+            }
+            /* Backdrop overlay - removed to allow map interaction */
+            .bottom-sheet-backdrop {
+                display: none !important;
             }
         }
         #runClubName {
@@ -420,7 +540,7 @@
     <footer class="navbar navbar-dark fixed-bottom">
         <div class="container text-center d-flex flex-column">
             <span class="mb-0 h5 mx-auto" style="font-size: 12px;font-weight: 400;">
-                By <a href="https://atmikapai.dev/" target="_blank" style="color: inherit; font-weight: 400;font-size: 12px">Atmika Pai</a>
+                Built by <a href="https://atmikapai.dev/" target="_blank" style="color: inherit; font-weight: 400;font-size: 12px">Atmika Pai</a>
             </span>
             <div style="font-size: 8px; margin-top: 1px; margin-bottom: 2px; font-weight: 400">
                 <span>Part of <a href="https://medium.com/map-nyc" target="_blank" style="font-weight: 400; font-style:italics;">The New York Trilogy</a></span>
@@ -659,6 +779,32 @@
 
     <div id="map"></div>
 
+    <!-- Segments Modal (bottom sheet on mobile, overlay on desktop) -->
+    <div class="modal fade" id="segmentsModal" tabindex="-1" role="dialog" aria-labelledby="segmentsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-segment modal-dialog-centered modal" role="document">
+            <div class="modal-content">
+                <!-- Drag handle for mobile bottom sheet -->
+                <div class="bottom-sheet-handle" id="sheetHandle"></div>
+
+                <div class="modal-header w-100 d-flex flex-column align-items-center">
+                    <h4 id="segmentsModalTitle" class="font-weight-bold mb-2 text-center" style="font-size: 1.1rem; line-height: 1.3;">Trending Strava Segments</h4>
+                    <button type="button" class="close position-absolute" style="right: 15px; top: 15px;" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body" style="padding: 15px;">
+                    <div id="segments-list-modal">
+                        <!-- Segments will be dynamically loaded here -->
+                    </div>
+                    <div id="loading-segments-modal" style="display: none; text-align: center; padding: 20px; font-size: 0.75rem; color: #999;">
+                        Loading trending routes...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap Modal -->
     <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal" role="document">
@@ -676,29 +822,6 @@
                     <p id="distance" class="mt-1 mb-1 text-center"></p>
                     <div id="meetingTimes" class="mt-1 mb-3 meeting-times"></div>
                     <p id="clubWebsite" class="mb-3 text-center"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Segments Modal -->
-    <div class="modal fade" id="segmentsModal" tabindex="-1" role="dialog" aria-labelledby="segmentsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-segment modal-dialog-centered modal" role="document">
-            <div class="modal-content">
-                <div class="modal-header w-100 d-flex flex-column align-items-center">
-                    <h4 id="segmentsModalTitle" class="font-weight-bold mb-2 text-center" style="font-size: 1.1rem; line-height: 1.3;">Trending Strava Segments</h4>
-                    <button type="button" class="close position-absolute" style="right: 15px; top: 15px;" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body" style="padding: 15px;">
-                    <div id="segments-list-modal" style="max-height: 400px; overflow-y: auto;">
-                        <!-- Segments will be dynamically loaded here -->
-                    </div>
-                    <div id="loading-segments-modal" style="display: none; text-align: center; padding: 20px; font-size: 0.75rem; color: #999;">
-                        Loading trending routes...
-                    </div>
                 </div>
             </div>
         </div>
@@ -810,6 +933,18 @@
 
         // Initialize collapsible sections (accordion behavior - only one open at a time)
         function initCollapsibleSections() {
+            // On mobile, ensure all sections start collapsed
+            if (window.innerWidth <= 767) {
+                document.querySelectorAll('.collapsible-header').forEach(function(h) {
+                    h.classList.remove('active');
+                    var chevron = h.querySelector('.collapsible-chevron');
+                    if (chevron) chevron.classList.remove('open');
+                });
+                document.querySelectorAll('.collapsible-content').forEach(function(c) {
+                    c.classList.remove('open');
+                });
+            }
+
             document.querySelectorAll('.collapsible-header').forEach(function(header) {
                 header.addEventListener('click', function() {
                     var sectionName = this.getAttribute('data-section');
@@ -1172,6 +1307,21 @@
 
             document.getElementById('load-trending').addEventListener('click', function() {
                 loadStravaSegments();
+
+                // On mobile, collapse the Strava Segments accordion after clicking
+                if (window.innerWidth <= 767) {
+                    var stravaHeader = document.querySelector('.collapsible-header[data-section="social"]');
+                    var stravaContent = document.querySelector('.collapsible-content[data-content="social"]');
+                    var chevron = stravaHeader.querySelector('.collapsible-chevron');
+
+                    if (stravaHeader && stravaContent) {
+                        stravaHeader.classList.remove('active');
+                        stravaContent.classList.remove('open');
+                        if (chevron) {
+                            chevron.classList.remove('open');
+                        }
+                    }
+                }
             });
 
             // Remove segment lines when modal is closed
@@ -1181,6 +1331,90 @@
                     segmentsLayer = null;
                 }
             });
+
+            // Bottom Sheet functionality for mobile
+            (function() {
+                if (window.innerWidth > 767) return; // Only on mobile
+
+                var sheet = document.querySelector('#segmentsModal .modal-dialog-segment');
+                var handle = document.getElementById('sheetHandle');
+                var modal = document.getElementById('segmentsModal');
+
+                var startY = 0;
+                var currentY = 0;
+                var isDragging = false;
+                var currentPosition = 'peek'; // peek, half, full
+
+                // Touch start
+                handle.addEventListener('touchstart', function(e) {
+                    isDragging = true;
+                    startY = e.touches[0].clientY;
+                    sheet.style.transition = 'none';
+                });
+
+                // Touch move
+                handle.addEventListener('touchmove', function(e) {
+                    if (!isDragging) return;
+
+                    currentY = e.touches[0].clientY;
+                    var deltaY = currentY - startY;
+
+                    // Calculate current translateY based on position
+                    var currentTranslateVh;
+                    if (currentPosition === 'peek') currentTranslateVh = 75;
+                    else if (currentPosition === 'half') currentTranslateVh = 50;
+                    else currentTranslateVh = 20;
+
+                    // Calculate new translateY (dragging down increases, up decreases)
+                    var deltaVh = (deltaY / window.innerHeight) * 100;
+                    var newTranslateVh = currentTranslateVh + deltaVh;
+
+                    // Clamp between 20vh (fully expanded) and 100vh (hidden)
+                    newTranslateVh = Math.max(20, Math.min(100, newTranslateVh));
+
+                    sheet.style.transform = 'translateY(' + newTranslateVh + 'vh)';
+                });
+
+                // Touch end - snap to nearest position
+                handle.addEventListener('touchend', function(e) {
+                    if (!isDragging) return;
+                    isDragging = false;
+
+                    sheet.style.transition = 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+
+                    // Get current transform value
+                    var transform = window.getComputedStyle(sheet).transform;
+                    var matrix = new DOMMatrix(transform);
+                    var currentTranslateY = matrix.m42; // Y translation in pixels
+                    var currentTranslateVh = (currentTranslateY / window.innerHeight) * 100;
+
+                    // Determine closest snap point based on translateY
+                    if (currentTranslateVh > 85) {
+                        // Close the sheet (dragged down past 85vh)
+                        $('#segmentsModal').modal('hide');
+                    } else if (currentTranslateVh > 62.5) {
+                        // Snap to peek (75vh)
+                        sheet.className = 'modal-dialog modal-dialog-segment modal-dialog-centered modal peek';
+                        currentPosition = 'peek';
+                    } else if (currentTranslateVh > 35) {
+                        // Snap to half (50vh)
+                        sheet.className = 'modal-dialog modal-dialog-segment modal-dialog-centered modal half';
+                        currentPosition = 'half';
+                    } else {
+                        // Snap to full (20vh)
+                        sheet.className = 'modal-dialog modal-dialog-segment modal-dialog-centered modal full';
+                        currentPosition = 'full';
+                    }
+                });
+
+                // When modal opens, set to peek position
+                $('#segmentsModal').on('shown.bs.modal', function () {
+                    if (window.innerWidth <= 767) {
+                        currentPosition = 'peek';
+                        sheet.className = 'modal-dialog modal-dialog-segment modal-dialog-centered modal peek';
+                    }
+                });
+            })();
 
             function loadStravaSegments() {
                 // Show loading state in modal
@@ -1390,16 +1624,23 @@
                                 document.querySelectorAll('.segment-item').forEach(function(item) {
                                     item.style.backgroundColor = '';
                                     item.style.borderColor = '#e8ddd3';
+                                    item.classList.remove('segment-pulse');
 
                                     if (parseInt(item.getAttribute('data-segment-id')) === clickedSegment.id) {
                                         item.style.backgroundColor = '#f3e5f5';
                                         item.style.borderColor = '#800080';
 
+                                        // Add pulse animation to draw attention
+                                        item.classList.add('segment-pulse');
+
                                         // Scroll to this segment in the modal
-                                        item.scrollIntoView({
-                                            behavior: 'smooth',
-                                            block: 'nearest'
-                                        });
+                                        // Use setTimeout to ensure the scroll happens after the highlighting
+                                        setTimeout(function() {
+                                            item.scrollIntoView({
+                                                behavior: 'smooth',
+                                                block: 'center'
+                                            });
+                                        }, 100);
                                     }
                                 });
 
